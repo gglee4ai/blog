@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>simulation on A minimal Hugo website</title>
+    <link>/tags/simulation/</link>
+    <description>Recent content in simulation on A minimal Hugo website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Sun, 19 Apr 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/simulation/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>difference-between-two</title>
+      <link>/post/2020/difference-between-two/</link>
+      <pubDate>Sun, 19 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2020/difference-between-two/</guid>
+      <description>두 표본의 통계량 차이를 반복실험을 통해서 알아보자. 일반적으로 잘알려진 사실은 두 표본의 평균의 차는 변하지 않는다. 다만, 편차, 신뢰구간, 또는 표준오차는 몇개를 뽑느냐, 모분산이 있느냐 없느냐에 따라 여러 계산식으로 표현될 수 있다. 하지만, 간단하게 반복실험을 해보면 쉽게 결과를 확인할 수 있다.
+정규분포를 가지는 두 집단에서의 차이를 계산하는 함수이다.
+simulation_diff &amp;lt;- function(n1, m1, s1, n2, m2, s2, n_total = 100000) { m &amp;lt;-list() for (i in 1:n_total) { x1 &amp;lt;- rnorm(n1, m1, s1) x2 &amp;lt;- rnorm(n2, m2, s2) x1_m &amp;lt;- mean(x1) x2_m &amp;lt;- mean(x2) m[[i]] &amp;lt;- x2_m - x1_m } unlist(m) } 한번만 측정시 sim1 &amp;lt;- simulation_diff(n1 = 1, m1 = 10, s1 = 1, n2 = 1, m2 = 11, s2 = 1) mean(sim1) # = 11 - 10  ## [1] 0.</description>
+    </item>
+    
+    <item>
+      <title>두께측정으로 알아보는 통계량</title>
+      <link>/post/2020/thickness-measurement-statistic/</link>
+      <pubDate>Sun, 12 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2020/thickness-measurement-statistic/</guid>
+      <description>최근에 철판 두께 관련 측정 자료를 정리할 일이 있었다. 자료를 정리하다 보니, 측정치에 대한 통계중 실수하기 쉬운 내용이 있어 이를 정리해 보았다.
+가로 1 m, 세로 1 m 두께, 10 mm 인 철판의 두께를 측정하는 경우를 생각해 보자. 두께 측정방법은 초음파탐상측정법을 사용하였고, 캘리브레이션이 다 끝나서 재기만 하면 두께가 mm로 환산되어 나온다고 가정하자. 만일 각 변의 길이에 따라 1 cm 간격으로 측정하면 100 * 100 = 10000 개의 위치에서 데이터를 취득하게 된다.</description>
+    </item>
+    
+  </channel>
+</rss>

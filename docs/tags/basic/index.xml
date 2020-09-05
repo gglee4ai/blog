@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>basic on A minimal Hugo website</title>
+    <link>/tags/basic/</link>
+    <description>Recent content in basic on A minimal Hugo website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Sun, 19 Apr 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/basic/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>difference-between-two</title>
+      <link>/post/2020/difference-between-two/</link>
+      <pubDate>Sun, 19 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2020/difference-between-two/</guid>
+      <description>두 표본의 통계량 차이를 반복실험을 통해서 알아보자. 일반적으로 잘알려진 사실은 두 표본의 평균의 차는 변하지 않는다. 다만, 편차, 신뢰구간, 또는 표준오차는 몇개를 뽑느냐, 모분산이 있느냐 없느냐에 따라 여러 계산식으로 표현될 수 있다. 하지만, 간단하게 반복실험을 해보면 쉽게 결과를 확인할 수 있다.
+정규분포를 가지는 두 집단에서의 차이를 계산하는 함수이다.
+simulation_diff &amp;lt;- function(n1, m1, s1, n2, m2, s2, n_total = 100000) { m &amp;lt;-list() for (i in 1:n_total) { x1 &amp;lt;- rnorm(n1, m1, s1) x2 &amp;lt;- rnorm(n2, m2, s2) x1_m &amp;lt;- mean(x1) x2_m &amp;lt;- mean(x2) m[[i]] &amp;lt;- x2_m - x1_m } unlist(m) } 한번만 측정시 sim1 &amp;lt;- simulation_diff(n1 = 1, m1 = 10, s1 = 1, n2 = 1, m2 = 11, s2 = 1) mean(sim1) # = 11 - 10  ## [1] 1.</description>
+    </item>
+    
+  </channel>
+</rss>
