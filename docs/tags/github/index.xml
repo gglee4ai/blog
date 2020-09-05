@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>github on A minimal Hugo website</title>
-    <link>/tags/github/</link>
+    <link>/blog/tags/github/</link>
     <description>Recent content in github on A minimal Hugo website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
     <lastBuildDate>Mon, 06 Apr 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/github/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/blog/tags/github/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>github에서 hugo 관련 팁</title>
-      <link>/post/2020/github-hugo-tips/</link>
+      <link>/blog/post/2020/github-hugo-tips/</link>
       <pubDate>Mon, 06 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/2020/github-hugo-tips/</guid>
+      <guid>/blog/post/2020/github-hugo-tips/</guid>
       <description>hugo와 github 관련해서 팁을 모아보았다.
 hugo 테마를 설치할 때 git submodule로 설치해야, 테마와 본인 내용을 분리해서 git 사용 가능
 git submodule add https://github.com/yihui/hugo-xmag.git themes/hugo-xmag submodule 삭제시 git submodule로 설치된 내용은 아래의 순서대로 제거해야 사라짐

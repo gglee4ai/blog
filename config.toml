@@ -1,4 +1,4 @@
-baseurl = "/"
+baseurl = "https://gglee4ai.github.io/blog/"
 languageCode = "ko-kr"
 title = "A minimal Hugo website"
 theme = "hugo-xmin"

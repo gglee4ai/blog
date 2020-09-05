@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>두께측정으로 알아보는 통계량 | A minimal Hugo website</title>
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/fonts.css" />
+    <link rel="stylesheet" href="/blog/css/style.css" />
+    <link rel="stylesheet" href="/blog/css/fonts.css" />
     
   </head>
 
@@ -13,13 +13,13 @@
     <nav>
     <ul class="menu">
       
-      <li><a href="/">Home</a></li>
+      <li><a href="/blog">Home</a></li>
       
-      <li><a href="/about/">About</a></li>
+      <li><a href="/blog/about/">About</a></li>
       
-      <li><a href="/categories/">Categories</a></li>
+      <li><a href="/blog/categories/">Categories</a></li>
       
-      <li><a href="/tags/">Tags</a></li>
+      <li><a href="/blog/tags/">Tags</a></li>
       
     </ul>
     <hr/>
@@ -94,7 +94,7 @@ df</code></pre>
 ## 1  10.0 0.0302 0.000911</code></pre>
 <pre class="r"><code>df %&gt;% ggplot(aes(sample_mean)) + 
   geom_histogram(color = &quot;black&quot;, fill = &quot;white&quot;)</code></pre>
-<p><img src="/post/2020-04-12-thickness-measurement-statistic_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
+<p><img src="/blog/post/2020-04-12-thickness-measurement-statistic_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
 <p>최초에 세팅한 값 그대로 잘 나온다. 근데 이건 잘 해석해야 할 것이, 원래 철판 전체의 두께가 10 mm 였는데, 전체 측정한 철판의 평균이 그것에 맞춰서 나온 것이고, 측정 한계 만큼 표준편차와 분산이 발생하였다는 의미. 만일 한 포인트만으로 계산해 보면, 9.90, 10.10 mm 가 나오는 위치도 존재한다. 초음파 표준편차가 0.03 mm인데, 오차가 0.10 mm나 나온다고? 10000번 측정하다 보면 충분히 가능한 이야기이다 (정규분포에서 3sd 이상인 경우).</p>
 </div>
 <div id="위치별-측정-횟수-영향" class="section level2">
@@ -139,7 +139,7 @@ df</code></pre>
   geom_point(stat=&#39;summary&#39;, fun = &#39;mean&#39;) +
   facet_wrap(~key, scales = &quot;free&quot;) +
   theme(legend.position = &quot;none&quot;)</code></pre>
-<p><img src="/post/2020-04-12-thickness-measurement-statistic_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
+<p><img src="/blog/post/2020-04-12-thickness-measurement-statistic_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
 <p><strong>표준편차만 불일치</strong>.</p>
 <p>참고로 측정위치에 따른 평균과 불확도(표준오차)를 수식으로 표현하면, 아래와 같다.</p>
 <p><span class="math display">\[ \bar{Y} = \frac{1}{N} \sum_{i=1}^{N}{Y_i}\]</span>
@@ -224,7 +224,7 @@ df1_summarized</code></pre>
   ggplot(aes(value)) +
   geom_histogram(color = &quot;black&quot;, fill = &quot;white&quot;) +
   facet_wrap(~key, scales = &quot;free&quot;)</code></pre>
-<p><img src="/post/2020-04-12-thickness-measurement-statistic_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>
+<p><img src="/blog/post/2020-04-12-thickness-measurement-statistic_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>
 <p>전체 철판 두께에 대해서는 평균의 분포가 박스형으로 바뀌었으나(10-11 mm사이에 균일 분포), 측정 위치별 분산은 변하지 않았다. 결국, 두께가 다른 경우에도, <strong>초음파 장비의 오차 즉, 분산은 각 위치별 분산의 평균으로 계산할 수 있다</strong>.</p>
 </div>
 <div id="요약" class="section level2">

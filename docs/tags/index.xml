@@ -2,138 +2,138 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on A minimal Hugo website</title>
-    <link>/tags/</link>
+    <link>/blog/tags/</link>
     <description>Recent content in Tags on A minimal Hugo website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
     <lastBuildDate>Mon, 24 Aug 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>bash</title>
-      <link>/tags/bash/</link>
+      <link>/blog/tags/bash/</link>
       <pubDate>Mon, 24 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/bash/</guid>
+      <guid>/blog/tags/bash/</guid>
       <description></description>
     </item>
     
     <item>
       <title>tips</title>
-      <link>/tags/tips/</link>
+      <link>/blog/tags/tips/</link>
       <pubDate>Mon, 24 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/tips/</guid>
+      <guid>/blog/tags/tips/</guid>
       <description></description>
     </item>
     
     <item>
       <title>docker</title>
-      <link>/tags/docker/</link>
+      <link>/blog/tags/docker/</link>
       <pubDate>Sun, 23 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/docker/</guid>
+      <guid>/blog/tags/docker/</guid>
       <description></description>
     </item>
     
     <item>
       <title>simulation</title>
-      <link>/tags/simulation/</link>
+      <link>/blog/tags/simulation/</link>
       <pubDate>Sun, 19 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/simulation/</guid>
+      <guid>/blog/tags/simulation/</guid>
       <description></description>
     </item>
     
     <item>
       <title>rstudio</title>
-      <link>/tags/rstudio/</link>
+      <link>/blog/tags/rstudio/</link>
       <pubDate>Sat, 11 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/rstudio/</guid>
+      <guid>/blog/tags/rstudio/</guid>
       <description></description>
     </item>
     
     <item>
       <title>setting</title>
-      <link>/tags/setting/</link>
+      <link>/blog/tags/setting/</link>
       <pubDate>Sat, 11 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/setting/</guid>
+      <guid>/blog/tags/setting/</guid>
       <description></description>
     </item>
     
     <item>
       <title>blogdown</title>
-      <link>/tags/blogdown/</link>
+      <link>/blog/tags/blogdown/</link>
       <pubDate>Mon, 06 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/blogdown/</guid>
+      <guid>/blog/tags/blogdown/</guid>
       <description></description>
     </item>
     
     <item>
       <title>github</title>
-      <link>/tags/github/</link>
+      <link>/blog/tags/github/</link>
       <pubDate>Mon, 06 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/github/</guid>
+      <guid>/blog/tags/github/</guid>
       <description></description>
     </item>
     
     <item>
       <title>hugo</title>
-      <link>/tags/hugo/</link>
+      <link>/blog/tags/hugo/</link>
       <pubDate>Mon, 06 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/hugo/</guid>
+      <guid>/blog/tags/hugo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>vscode</title>
-      <link>/tags/vscode/</link>
+      <link>/blog/tags/vscode/</link>
       <pubDate>Sun, 05 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/vscode/</guid>
+      <guid>/blog/tags/vscode/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ggpubr</title>
-      <link>/tags/ggpubr/</link>
+      <link>/blog/tags/ggpubr/</link>
       <pubDate>Sat, 04 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/ggpubr/</guid>
+      <guid>/blog/tags/ggpubr/</guid>
       <description></description>
     </item>
     
     <item>
       <title>markdown</title>
-      <link>/tags/markdown/</link>
+      <link>/blog/tags/markdown/</link>
       <pubDate>Fri, 16 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>/tags/markdown/</guid>
+      <guid>/blog/tags/markdown/</guid>
       <description></description>
     </item>
     
     <item>
       <title>mathjax</title>
-      <link>/tags/mathjax/</link>
+      <link>/blog/tags/mathjax/</link>
       <pubDate>Sun, 14 Feb 2016 00:00:00 +0000</pubDate>
       
-      <guid>/tags/mathjax/</guid>
+      <guid>/blog/tags/mathjax/</guid>
       <description></description>
     </item>
     
     <item>
       <title>pandoc</title>
-      <link>/tags/pandoc/</link>
+      <link>/blog/tags/pandoc/</link>
       <pubDate>Sun, 14 Feb 2016 00:00:00 +0000</pubDate>
       
-      <guid>/tags/pandoc/</guid>
+      <guid>/blog/tags/pandoc/</guid>
       <description></description>
     </item>
     
