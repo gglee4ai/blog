@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>bash on A minimal Hugo website</title>
-    <link>/blog/tags/bash/</link>
+    <link>https://gglee4ai.github.io/blog/tags/bash/</link>
     <description>Recent content in bash on A minimal Hugo website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
     <lastBuildDate>Mon, 24 Aug 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/blog/tags/bash/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://gglee4ai.github.io/blog/tags/bash/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Bash 팁 정리</title>
-      <link>/blog/post/2020/bash-tips/</link>
+      <link>https://gglee4ai.github.io/blog/post/2020/bash-tips/</link>
       <pubDate>Mon, 24 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>/blog/post/2020/bash-tips/</guid>
+      <guid>https://gglee4ai.github.io/blog/post/2020/bash-tips/</guid>
       <description>리눅스 기초인 bash 명령에 대한 내용을 간단히 요약하였다. 보다 자세한 내용은 가장 빨리 만나는 Docker, 4.2장을 하시길.
 1 단순 명령  &amp;lt;: 표준입력 다이렉션, cat &amp;lt; ./hello.txt &amp;gt;: 표준출력 다이렉션, echo &amp;quot;hello&amp;quot; &amp;gt; ./hello.txt &amp;gt;&amp;gt;: 표준출력 다이렉션을 기존 파일에 추가, echo &amp;quot;hello&amp;quot; &amp;gt;&amp;gt; ./hello.txt 2&amp;gt;: 표준에러를 파일로 저장 2&amp;gt;&amp;gt;: 표준에러를 파일에 추가 &amp;amp;&amp;gt;: 표준출력과 표준에러를 파일로 저장 1&amp;gt;&amp;amp;2: 표준출력을 표준에러로 저장 2&amp;gt;&amp;amp;1: 표준에러를 표준출력으로 보냄, abcd &amp;gt; result.txt 2&amp;gt;$1 |: 표준출력을 다음 명령의 표준입력으로 보냄 =: 변수 설정, hello=&amp;quot;Hello World&amp;quot; $: 설정 변수 사용시, echo $hello $(): 명령 실행 결과를 변수화, echo $(date) ` `: 명령 실행 결과를 변수화 $()와 동일 &amp;amp;&amp;amp;: 명령어 실행후 성공하면 다음 명령 실행, make &amp;amp;&amp;amp; make install ;: 한줄에서 여러개 명령 실행, false; echo &amp;quot;hello&amp;quot; &#39; &#39;: 문자열로 그대로 표현, echo &#39;$USER&#39; &amp;quot; &amp;quot;: 문자열내 변수를 변환후 표현, echo &amp;quot;$USER&amp;quot; &amp;quot; &#39; &#39; &amp;quot;: 문자열 내에 다시 문자열 이용, bash -c &amp;quot;/bin/echo Hello &#39;World&#39;&amp;quot; \&amp;quot;: &#39; 안에서 &amp;ldquo;를 사용 \$: &amp;quot; 안에서 $ 사용 ${}: 변수 치환 HELLO=${HELLO-&amp;quot;abcd&amp;quot;}: HELLO가 없을경우 &amp;ldquo;abcd&amp;rdquo; 대입 HELLO=${HELLO:-&amp;quot;abcd&amp;quot;}: HELLO가 있으나 NULL이면 &amp;ldquo;abcd&amp;rdquo; 대입 &amp;lt;&amp;lt;&amp;lt;: 문자열을 명령의 표준 입력으로 보냄 &amp;lt;&amp;lt;EOF .</description>
     </item>

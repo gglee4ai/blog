@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>web on A minimal Hugo website</title>
-    <link>/blog/categories/web/</link>
+    <link>https://gglee4ai.github.io/blog/categories/web/</link>
     <description>Recent content in web on A minimal Hugo website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
     <lastBuildDate>Mon, 24 Aug 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/blog/categories/web/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://gglee4ai.github.io/blog/categories/web/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Bash 팁 정리</title>
-      <link>/blog/post/2020/bash-tips/</link>
+      <link>https://gglee4ai.github.io/blog/post/2020/bash-tips/</link>
       <pubDate>Mon, 24 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>/blog/post/2020/bash-tips/</guid>
+      <guid>https://gglee4ai.github.io/blog/post/2020/bash-tips/</guid>
       <description>리눅스 기초인 bash 명령에 대한 내용을 간단히 요약하였다. 보다 자세한 내용은 가장 빨리 만나는 Docker, 4.2장을 하시길.
 1 단순 명령  &amp;lt;: 표준입력 다이렉션, cat &amp;lt; ./hello.txt &amp;gt;: 표준출력 다이렉션, echo &amp;quot;hello&amp;quot; &amp;gt; ./hello.txt &amp;gt;&amp;gt;: 표준출력 다이렉션을 기존 파일에 추가, echo &amp;quot;hello&amp;quot; &amp;gt;&amp;gt; ./hello.txt 2&amp;gt;: 표준에러를 파일로 저장 2&amp;gt;&amp;gt;: 표준에러를 파일에 추가 &amp;amp;&amp;gt;: 표준출력과 표준에러를 파일로 저장 1&amp;gt;&amp;amp;2: 표준출력을 표준에러로 저장 2&amp;gt;&amp;amp;1: 표준에러를 표준출력으로 보냄, abcd &amp;gt; result.txt 2&amp;gt;$1 |: 표준출력을 다음 명령의 표준입력으로 보냄 =: 변수 설정, hello=&amp;quot;Hello World&amp;quot; $: 설정 변수 사용시, echo $hello $(): 명령 실행 결과를 변수화, echo $(date) ` `: 명령 실행 결과를 변수화 $()와 동일 &amp;amp;&amp;amp;: 명령어 실행후 성공하면 다음 명령 실행, make &amp;amp;&amp;amp; make install ;: 한줄에서 여러개 명령 실행, false; echo &amp;quot;hello&amp;quot; &#39; &#39;: 문자열로 그대로 표현, echo &#39;$USER&#39; &amp;quot; &amp;quot;: 문자열내 변수를 변환후 표현, echo &amp;quot;$USER&amp;quot; &amp;quot; &#39; &#39; &amp;quot;: 문자열 내에 다시 문자열 이용, bash -c &amp;quot;/bin/echo Hello &#39;World&#39;&amp;quot; \&amp;quot;: &#39; 안에서 &amp;ldquo;를 사용 \$: &amp;quot; 안에서 $ 사용 ${}: 변수 치환 HELLO=${HELLO-&amp;quot;abcd&amp;quot;}: HELLO가 없을경우 &amp;ldquo;abcd&amp;rdquo; 대입 HELLO=${HELLO:-&amp;quot;abcd&amp;quot;}: HELLO가 있으나 NULL이면 &amp;ldquo;abcd&amp;rdquo; 대입 &amp;lt;&amp;lt;&amp;lt;: 문자열을 명령의 표준 입력으로 보냄 &amp;lt;&amp;lt;EOF .</description>
     </item>
     
     <item>
       <title>Docker 팁 정리</title>
-      <link>/blog/post/2020/docker-tips/</link>
+      <link>https://gglee4ai.github.io/blog/post/2020/docker-tips/</link>
       <pubDate>Sun, 23 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>/blog/post/2020/docker-tips/</guid>
+      <guid>https://gglee4ai.github.io/blog/post/2020/docker-tips/</guid>
       <description>쓸수록 매력있는 것이 도커 인 것 같다. 처음에 세팅과 개념이 어려워서 그렇지 적절한 명령어로 조합을 하고 나면, 리눅스 서버의 능력을 최고로 사용할 수 있는 것 같다.
 하지만, 일단 설정하고 나면, 자주 안쓰기 때문에 까먹기 쉽다. 일반적으로 많이 사용하는 도커 관련 기본 명령어를 간단히 정리해 보고, 실제 내가 사용하는 gpu 서버상의 도커 명령어도 간단하게 정리해 보았다.
 1 기초 사용법 1.1 도커 이미지 검색 docker search nginx 보통 docker hub에서 이미지 확인을 하는 게 보통이나, 터미널 상에서 확인이 필요할 경우 사용한다.</description>
@@ -34,10 +34,10 @@
     
     <item>
       <title>github에서 hugo 관련 팁</title>
-      <link>/blog/post/2020/github-hugo-tips/</link>
+      <link>https://gglee4ai.github.io/blog/post/2020/github-hugo-tips/</link>
       <pubDate>Mon, 06 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/blog/post/2020/github-hugo-tips/</guid>
+      <guid>https://gglee4ai.github.io/blog/post/2020/github-hugo-tips/</guid>
       <description>hugo와 github 관련해서 팁을 모아보았다.
 hugo 테마를 설치할 때 git submodule로 설치해야, 테마와 본인 내용을 분리해서 git 사용 가능
 git submodule add https://github.com/yihui/hugo-xmag.git themes/hugo-xmag submodule 삭제시 git submodule로 설치된 내용은 아래의 순서대로 제거해야 사라짐
@@ -47,10 +47,10 @@ git clone --recursive https://github.com/gglee/blog2md </description>
     
     <item>
       <title>Visual studio code setting tips</title>
-      <link>/blog/post/2020/vscode-setting-tips/</link>
+      <link>https://gglee4ai.github.io/blog/post/2020/vscode-setting-tips/</link>
       <pubDate>Sun, 05 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/blog/post/2020/vscode-setting-tips/</guid>
+      <guid>https://gglee4ai.github.io/blog/post/2020/vscode-setting-tips/</guid>
       <description>VScode를 사용하면서 필요한 옵션에 대해서 정리해 보았다.
 자동 줄바꿈 켜기 가끔식 Rmarkdown 파일을 열 경우, 줄바꿈이 안될때가 있다. 이때에는, File &amp;gt; Preferences &amp;gt; Settings 에서 아래 옵션을 켠다.
 { &amp;#34;editor.wordWrap&amp;#34;: &amp;#34;on&amp;#34; } tab 설정 항상 스페이스, 사이즈는 2, 다른 파일에도 강제 적용
@@ -59,10 +59,10 @@ git clone --recursive https://github.com/gglee/blog2md </description>
     
     <item>
       <title>About hugo xmag</title>
-      <link>/blog/post/2017/about-hugo-xmag/</link>
+      <link>https://gglee4ai.github.io/blog/post/2017/about-hugo-xmag/</link>
       <pubDate>Fri, 16 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>/blog/post/2017/about-hugo-xmag/</guid>
+      <guid>https://gglee4ai.github.io/blog/post/2017/about-hugo-xmag/</guid>
       <description>XMag is the second Hugo theme I have designed. It is based on my first Hugo theme XMin, and similarly, features minimalism but with a magazine style on the homepage inspired by The Signpost on Wikipedia. You can find its source code on Github: https://github.com/yihui/hugo-xmag (licensed under MIT).
 Features This theme includes a few cool features:
   Responsive article summary blocks on homepage
@@ -71,32 +71,23 @@ Features This theme includes a few cool features:
     
     <item>
       <title>A quick note on two beautiful websites</title>
-      <link>/blog/post/2017/a-quick-note/</link>
+      <link>https://gglee4ai.github.io/blog/post/2017/a-quick-note/</link>
       <pubDate>Tue, 13 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>/blog/post/2017/a-quick-note/</guid>
+      <guid>https://gglee4ai.github.io/blog/post/2017/a-quick-note/</guid>
       <description>To me, the two most impressive websites based on blogdown are:
  Rob J Hyndman&amp;rsquo;s personal website. Live Free or Dichotomize by Lucy and Nick et al.  I&amp;rsquo;m sure there will be more.</description>
     </item>
     
     <item>
       <title>A plain markdown post</title>
-      <link>/blog/post/2016/a-plain-markdown-post/</link>
+      <link>https://gglee4ai.github.io/blog/post/2016/a-plain-markdown-post/</link>
       <pubDate>Sun, 14 Feb 2016 00:00:00 +0000</pubDate>
       
-      <guid>/blog/post/2016/a-plain-markdown-post/</guid>
+      <guid>https://gglee4ai.github.io/blog/post/2016/a-plain-markdown-post/</guid>
       <description>hugo-xmin 테마의 저자인 Yihui Xie의 이 문서를 번역하였습니다.
  이 글은 주로 blogdown 사용자를 위하여 작성되었습니다. 만일 blogdown을 사용하지 않는다면 첫 번째 섹션은 건너 뛸 수 있습니다.
 1. Markdown or R Markdown  일반 Markdown 문서에서는 R 코드를 실행할 수 없지만 R Markdown 문서에서는 R 코드 이와 같은 형식으로 (```{r}) 실행할 수 있습니다. 일반 Markdown 게시물은 Blackfriday를 통해서 변환되지만1, R Markdown 문서는 rmarkdown과 Pandoc에 의해서 변환됩니다.  Blackfriday의 Markdown과 Pandoc의 Markdown 사이에는 구문에 많은 차이가 있습니다.</description>
-    </item>
-    
-    <item>
-      <title>Introduction of hugo-xmin theme</title>
-      <link>/blog/post/2015/introduction-hugo-xmin/</link>
-      <pubDate>Mon, 01 Jun 2015 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/post/2015/introduction-hugo-xmin/</guid>
-      <description>HUGO XMIN Keep it simple, but not simpler XMin is a Hugo theme written by Yihui Xie in about four hours: half an hour was spent on the Hugo templates, and 3.5 hours were spent on styling. The main motivation for writing this theme was to provide a really minimal example to beginners of Hugo templates. This XMin theme contains about 130 lines of code in total, including the code in HTML templates and CSS (also counting empty lines).</description>
     </item>
     
   </channel>

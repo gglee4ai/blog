@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>blogdown on A minimal Hugo website</title>
-    <link>/blog/tags/blogdown/</link>
+    <link>https://gglee4ai.github.io/blog/tags/blogdown/</link>
     <description>Recent content in blogdown on A minimal Hugo website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
     <lastBuildDate>Mon, 06 Apr 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/blog/tags/blogdown/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://gglee4ai.github.io/blog/tags/blogdown/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>github에서 hugo 관련 팁</title>
-      <link>/blog/post/2020/github-hugo-tips/</link>
+      <link>https://gglee4ai.github.io/blog/post/2020/github-hugo-tips/</link>
       <pubDate>Mon, 06 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/blog/post/2020/github-hugo-tips/</guid>
+      <guid>https://gglee4ai.github.io/blog/post/2020/github-hugo-tips/</guid>
       <description>hugo와 github 관련해서 팁을 모아보았다.
 hugo 테마를 설치할 때 git submodule로 설치해야, 테마와 본인 내용을 분리해서 git 사용 가능
 git submodule add https://github.com/yihui/hugo-xmag.git themes/hugo-xmag submodule 삭제시 git submodule로 설치된 내용은 아래의 순서대로 제거해야 사라짐
@@ -26,10 +26,10 @@ git clone --recursive https://github.com/gglee/blog2md </description>
     
     <item>
       <title>A plain markdown post</title>
-      <link>/blog/post/2016/a-plain-markdown-post/</link>
+      <link>https://gglee4ai.github.io/blog/post/2016/a-plain-markdown-post/</link>
       <pubDate>Sun, 14 Feb 2016 00:00:00 +0000</pubDate>
       
-      <guid>/blog/post/2016/a-plain-markdown-post/</guid>
+      <guid>https://gglee4ai.github.io/blog/post/2016/a-plain-markdown-post/</guid>
       <description>hugo-xmin 테마의 저자인 Yihui Xie의 이 문서를 번역하였습니다.
  이 글은 주로 blogdown 사용자를 위하여 작성되었습니다. 만일 blogdown을 사용하지 않는다면 첫 번째 섹션은 건너 뛸 수 있습니다.
 1. Markdown or R Markdown  일반 Markdown 문서에서는 R 코드를 실행할 수 없지만 R Markdown 문서에서는 R 코드 이와 같은 형식으로 (```{r}) 실행할 수 있습니다. 일반 Markdown 게시물은 Blackfriday를 통해서 변환되지만1, R Markdown 문서는 rmarkdown과 Pandoc에 의해서 변환됩니다.  Blackfriday의 Markdown과 Pandoc의 Markdown 사이에는 구문에 많은 차이가 있습니다.</description>
