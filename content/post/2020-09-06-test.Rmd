@@ -1,0 +1,16 @@
+---
+title: rmd test
+author: ''
+date: '2020-09-06'
+slug: test
+categories:
+  - statistics
+tags:
+  - ggpubr
+draft: no
+---
+
+```{r}
+plot(cars)
+```
+

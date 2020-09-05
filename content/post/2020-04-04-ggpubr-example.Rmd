@@ -1,0 +1,73 @@
+---
+title: ggpubr 예제
+author: gglee
+date: '2020-04-04'
+slug: ggpubr-example
+categories: ["statistics"]
+tags: ["ggpubr"]
+draft: no
+---
+
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(
+  echo = FALSE,
+  include = FALSE,
+  message = TRUE,
+  warning = TRUE
+)
+```
+
+```{r}
+library(tidyverse)
+library(ggpubr)
+```
+
+ggplot이 참 좋은 패키지인 것은 맞지만, 간단한 그림을 그리는데 타이핑해야 하는 정보가 너무 많이 필요하다. 그래서 알아보니, ggpubr이 과거 plot과 유사한 간단한 사용법에 그림 퀄리티도 뛰어난 것 같아 사용법을 간단하게 정리한다. 
+
+```{r}
+# 예제 데이터 만들기
+set.seed(1234)
+df <- tibble(
+   sex = factor(rep(c("F", "M"), each = 200)),
+   weight = c(rnorm(200, 55), rnorm(200, 58)))
+df
+```
+
+## histogram
+
+```{r example-histogram, include=TRUE, echo=TRUE, warning=FALSE, fig.cap="히스토그램 예제"}
+p1 <- ggdensity(
+  data = df, x = "weight",
+  add = "mean", rug = TRUE,
+  color = "sex", fill = "sex",
+  palette = c("#00AFBB", "#E7B800")
+)
+
+p2 <- gghistogram(
+  data = df, x = "weight",
+  add = "mean", rug = TRUE,
+  color = "sex", fill = "sex",
+  palette = c("#00AFBB", "#E7B800")
+)
+
+p3 <- ggdensity(
+  data = df, x = "weight",
+  add = "mean", rug = TRUE,
+  fill = "lightgray"
+)
+
+p4 <- gghistogram(
+  data = df, x = "weight",
+  add = "mean",
+  color = "sex",
+  fill = "sex",
+  palette = c("#00AFBB", "#E7B800"),
+  add_density = TRUE
+)
+
+ggarrange(
+  p1, p2, p3, p4, 
+  labels = c("a)", "b)", "c)", "d)"), 
+  ncol = 2, nrow = 2)
+```
