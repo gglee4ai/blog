@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>docker on gglee Blog</title>
+    <link>https://gglee4ai.github.io/blog/tags/docker/</link>
+    <description>Recent content in docker on gglee Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Sun, 23 Aug 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://gglee4ai.github.io/blog/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Docker 팁 정리</title>
+      <link>https://gglee4ai.github.io/blog/post/2020/docker-tips/</link>
+      <pubDate>Sun, 23 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://gglee4ai.github.io/blog/post/2020/docker-tips/</guid>
+      <description>쓸수록 매력있는 것이 도커 인 것 같다. 처음에 세팅과 개념이 어려워서 그렇지 적절한 명령어로 조합을 하고 나면, 리눅스 서버의 능력을 최고로 사용할 수 있는 것 같다. 하</description>
+    </item>
+    
+  </channel>
+</rss>
