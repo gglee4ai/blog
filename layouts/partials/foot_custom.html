@@ -1,4 +1,4 @@
-<script>
+<script> 
 // yihui.org/js/math-code.js
 (function() {
 var i, text, code, codes = document.getElementsByTagName('code');
@@ -46,4 +46,13 @@ for (i = 0; i < codes.length;) {
   }
 })();
 </script>
-<script async src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+<script async src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/r.min.js"></script>
+
+<script>
+hljs.configure({languages: []});
+hljs.initHighlightingOnLoad();
+</script>
+
+{{ template "_internal/google_analytics.html" . }}
