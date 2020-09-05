@@ -7,13 +7,12 @@ disqusShortname = "gglee-blog"
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 footnotereturnlinkcontents = "↩"
 publishDir = "docs"
+hasCJKLanguage = true          # add by gglee
+DefaultContentLanguage = "ko"  # add by gglee
 # preserveTaxonomyNames = true   # add by gglee
-# hasCJKLanguage = true          # add by gglee
-# DefaultContentLanguage = "ko"  # add by gglee
 
 [permalinks]
     post = "/post/:year/:slug/"
-    # note = "/note/:year/:month/:day/:slug/"
 
 [[menu.main]]
     name = "Home"
