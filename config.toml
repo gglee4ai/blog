@@ -1,12 +1,15 @@
 baseurl = "https://gglee4ai.github.io/blog/"
 languageCode = "ko-kr"
-title = "A minimal Hugo website"
+title = "gglee Blog"
 theme = "hugo-xmin"
-googleAnalytics = ""
-disqusShortname = ""
+googleAnalytics = "UA-162930875-1"
+disqusShortname = "gglee-blog"
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 footnotereturnlinkcontents = "↩"
 publishDir = "docs"
+preserveTaxonomyNames = true   # add by gglee
+hasCJKLanguage = true          # add by gglee
+DefaultContentLanguage = "ko"  # add by gglee
 
 [permalinks]
     post = "/post/:year/:slug/"
@@ -33,7 +36,7 @@ publishDir = "docs"
 #     url = "/index.xml"
 
 [params]
-    description = "A website built through Hugo and blogdown."
+    description = "이 사이트는 Hugo와 blogdown으로 제작되었습니다."
     footer = "&copy; [gglee](https://gglee4ai.github.io) 2020  | [Github](https://github.com/gglee4ai)"
 
 [markup]
