@@ -7,7 +7,7 @@ categories:
   - web
 tags:
   - markdown
-draft: yes
+draft: no
 ---
 
 **XMag** is the second Hugo theme I have designed. It is based on my first Hugo theme [**XMin**](https://github.com/yihui/hugo-xmin), and similarly, features minimalism but with a magazine style on the homepage inspired by [The Signpost](https://en.wikipedia.org/wiki/Wikipedia:Wikipedia_Signpost) on Wikipedia. You can find its source code on Github: <https://github.com/yihui/hugo-xmag> (licensed under MIT).

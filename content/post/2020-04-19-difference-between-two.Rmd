@@ -5,7 +5,7 @@ date: '2020-04-19'
 categories:
   - statistics
 tags:
-  - basic
+  - simulation
 slug: difference-between-two
 draft: yes
 ---

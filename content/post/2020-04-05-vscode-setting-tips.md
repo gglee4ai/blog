@@ -4,8 +4,7 @@ author: gglee
 date: '2020-04-05'
 categories:
   - web
-tags:
-  - vscode
+tags: [vscode, tips]
 slug: vscode-setting-tips
 draft: no
 ---

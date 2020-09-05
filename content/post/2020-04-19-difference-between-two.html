@@ -5,7 +5,7 @@ date: '2020-04-19'
 categories:
   - statistics
 tags:
-  - basic
+  - simulation
 slug: difference-between-two
 draft: yes
 ---
@@ -29,27 +29,27 @@ draft: yes
 <h2>한번만 측정시</h2>
 <pre class="r"><code>sim1 &lt;- simulation_diff(n1 = 1, m1 = 10, s1 = 1, n2 = 1, m2 = 11, s2 = 1)
 mean(sim1)  # = 11 - 10 </code></pre>
-<pre><code>## [1] 0.999721</code></pre>
+<pre><code>## [1] 0.9991072</code></pre>
 <pre class="r"><code>var(sim1)   # = 1^2 + 1^2</code></pre>
-<pre><code>## [1] 2.004204</code></pre>
+<pre><code>## [1] 1.990819</code></pre>
 <pre class="r"><code>sd(sim1)    # sqrt(var(sim1)</code></pre>
-<pre><code>## [1] 1.415699</code></pre>
+<pre><code>## [1] 1.410964</code></pre>
 </div>
 <div id="각각-2번씩-측정할-경우" class="section level2">
 <h2>각각 2번씩 측정할 경우</h2>
 <pre class="r"><code>sim2 &lt;- simulation_diff(n1 = 2, m1 = 10, s1 = 1, n2 = 2, m2 = 11, s2 = 1)
 mean(sim2)  # = 11 - 10 </code></pre>
-<pre><code>## [1] 0.9949677</code></pre>
+<pre><code>## [1] 0.997395</code></pre>
 <pre class="r"><code>var(sim2)   # = 1^2 / 2 + 1^2 / 2</code></pre>
-<pre><code>## [1] 0.998045</code></pre>
+<pre><code>## [1] 1.003128</code></pre>
 </div>
 <div id="두-표본의-sd가-다른-경우" class="section level2">
 <h2>두 표본의 sd가 다른 경우</h2>
 <pre class="r"><code>sim3 &lt;- simulation_diff(n1 = 2, m1 = 10, s1 = 2, n2 = 2, m2 = 11, s2 = 1)
 mean(sim3)  # = 11 - 10 </code></pre>
-<pre><code>## [1] 0.9931996</code></pre>
+<pre><code>## [1] 0.9963212</code></pre>
 <pre class="r"><code>var(sim3)   # = 2^2 / 2 + 1^2 / 2</code></pre>
-<pre><code>## [1] 2.486808</code></pre>
+<pre><code>## [1] 2.504645</code></pre>
 <p>보다시피 어떤 경우에도 잘 대응된다. 즉 일반적으로,</p>
 <p><span class="math display">\[ var(x_2 - x_1) = \frac{var(x_1)}{N_1} + \frac{var(x_2)}{N_2}  \]</span>
 <span class="math display">\[ sd(x_2 - x_1) = \sqrt{ \frac{sd(x_1)^2}{N_1} + \frac{sd(x_2)^2}{N_2}  } \]</span></p>

@@ -5,7 +5,7 @@ date: '2020-08-23'
 slug: docker-tips
 categories:
   - web
-tags: [docker, tips, gpu, nginx]
+tags: [docker, tips]
 draft: no
 ---
 
