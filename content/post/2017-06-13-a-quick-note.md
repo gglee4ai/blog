@@ -4,6 +4,8 @@ author: Yihui Xie
 date: '2017-06-13'
 categories:
   - Web
+tags:
+  - blogdown
 slug: a-quick-note
 ---
 
