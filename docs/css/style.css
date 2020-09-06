@@ -31,7 +31,10 @@ a:hover { text-decoration: underline; }
   padding: 5px;
   border-radius: 10px;
   line-height: 1em; 
-}x
+}
+.article-meta h1 {
+  line-height: 1em; 
+}
 .category {
   font-weight: bold;
 }

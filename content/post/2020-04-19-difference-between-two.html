@@ -29,27 +29,27 @@ draft: yes
 <h2>한번만 측정시</h2>
 <pre class="r"><code>sim1 &lt;- simulation_diff(n1 = 1, m1 = 10, s1 = 1, n2 = 1, m2 = 11, s2 = 1)
 mean(sim1)  # = 11 - 10 </code></pre>
-<pre><code>## [1] 0.9972779</code></pre>
+<pre><code>## [1] 1.007093</code></pre>
 <pre class="r"><code>var(sim1)   # = 1^2 + 1^2</code></pre>
-<pre><code>## [1] 2.002788</code></pre>
+<pre><code>## [1] 1.995462</code></pre>
 <pre class="r"><code>sd(sim1)    # sqrt(var(sim1)</code></pre>
-<pre><code>## [1] 1.415199</code></pre>
+<pre><code>## [1] 1.412608</code></pre>
 </div>
 <div id="각각-2번씩-측정할-경우" class="section level2">
 <h2>각각 2번씩 측정할 경우</h2>
 <pre class="r"><code>sim2 &lt;- simulation_diff(n1 = 2, m1 = 10, s1 = 1, n2 = 2, m2 = 11, s2 = 1)
 mean(sim2)  # = 11 - 10 </code></pre>
-<pre><code>## [1] 0.9994387</code></pre>
+<pre><code>## [1] 0.9988947</code></pre>
 <pre class="r"><code>var(sim2)   # = 1^2 / 2 + 1^2 / 2</code></pre>
-<pre><code>## [1] 0.9926234</code></pre>
+<pre><code>## [1] 0.9935704</code></pre>
 </div>
 <div id="두-표본의-sd가-다른-경우" class="section level2">
 <h2>두 표본의 sd가 다른 경우</h2>
 <pre class="r"><code>sim3 &lt;- simulation_diff(n1 = 2, m1 = 10, s1 = 2, n2 = 2, m2 = 11, s2 = 1)
 mean(sim3)  # = 11 - 10 </code></pre>
-<pre><code>## [1] 1.001387</code></pre>
+<pre><code>## [1] 0.9974182</code></pre>
 <pre class="r"><code>var(sim3)   # = 2^2 / 2 + 1^2 / 2</code></pre>
-<pre><code>## [1] 2.501787</code></pre>
+<pre><code>## [1] 2.503727</code></pre>
 <p>보다시피 어떤 경우에도 잘 대응된다. 즉 일반적으로,</p>
 <p><span class="math display">\[ var(x_2 - x_1) = \frac{var(x_1)}{N_1} + \frac{var(x_2)}{N_2}  \]</span>
 <span class="math display">\[ sd(x_2 - x_1) = \sqrt{ \frac{sd(x_1)^2}{N_1} + \frac{sd(x_2)^2}{N_2}  } \]</span></p>
@@ -176,5 +176,5 @@ dd</code></pre>
   ggplot(aes(values)) +
   geom_histogram(color = &quot;black&quot;, fill = &quot;white&quot;) +
     facet_wrap(~keys, scales = &quot;free&quot;)</code></pre>
-<p><img src="/blog/post/2020-04-19-difference-between-two_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>
+<p><img src="/post/2020-04-19-difference-between-two_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>
 </div>
