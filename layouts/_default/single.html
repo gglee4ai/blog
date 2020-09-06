@@ -9,8 +9,8 @@
   </span>
   <h1>{{ .Title | markdownify }}</h1>
   {{ with .Params.author }}<span class="author">{{ . }}</span>{{ end }}
-  {{ if (gt .Params.date 0) }}<p class="date">{{ .Date.Format "2006-01-02" }}</p>{{ end }}
-  <span class="tags">
+  {{ if (gt .Params.date 0) }}<p>{{ .Date.Format "2006-01-02" }}</p>{{ end }}
+  <span>
     {{ range $i := (slice "tags") }}
     {{ with ($.Param $i) }}
     {{ $i | title }}: {{ range $j, $k := . }}{{ if gt $j 0}}, {{ end }}<a href="{{ relURL (print "/" $i "/" $k | urlize) }}">{{ $k }}</a>{{ end }}
