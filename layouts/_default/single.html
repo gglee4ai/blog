@@ -1,16 +1,16 @@
 {{ partial "header.html" . }}
 <div class="article-meta">
-  <span>
+  <span class="category">
     {{ range $i := (slice "categories") }}
     {{ with ($.Param $i) }}
-    {{ range $k := . }}<a href="{{ relURL (print "/" $i "/" $k | urlize) }}">{{ $k | upper }}</a> {{ end }}
+    {{ range $k := . }}<a href="{{ relURL (print "/" $i "/" $k | urlize) }}">{{ $k | title }}</a> {{ end }}
     {{ end }}
     {{ end }}
   </span>
   <h1>{{ .Title | markdownify }}</h1>
   {{ with .Params.author }}<span class="author">{{ . }}</span>{{ end }}
   {{ if (gt .Params.date 0) }}<p class="date">{{ .Date.Format "2006-01-02" }}</p>{{ end }}
-  <span>
+  <span class="tags">
     {{ range $i := (slice "tags") }}
     {{ with ($.Param $i) }}
     {{ $i | title }}: {{ range $j, $k := . }}{{ if gt $j 0}}, {{ end }}<a href="{{ relURL (print "/" $i "/" $k | urlize) }}">{{ $k }}</a>{{ end }}

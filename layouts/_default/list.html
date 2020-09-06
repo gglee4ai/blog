@@ -1,12 +1,16 @@
 {{ partial "header.html" . }}
 
-{{if not .IsHome }}
+{{ if .IsHome }}
+<div class="article-meta">
+<h1>{{ .Title | markdownify }}</h1>
+</div>
+{{ else }}
 <h1>{{ .Title | markdownify }}</h1>
 {{ end }}
 
 {{ .Content }}
 
-<ul>
+<ul class="posts">
   {{ $pages := .Pages }}
   {{ if .IsHome }}{{ $pages = .Site.RegularPages }}{{ end }}
   {{ range (where $pages "Section" "!=" "") }}
