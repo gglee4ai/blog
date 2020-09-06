@@ -106,12 +106,21 @@ Features This theme includes a few cool features:
     </item>
     
     <item>
-      <title>About Hugo XMin</title>
+      <title>Introduction of hugo-xmin theme</title>
+      <link>https://gglee4ai.github.io/blog/post/2015/introduction-hugo-xmin/</link>
+      <pubDate>Mon, 01 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://gglee4ai.github.io/blog/post/2015/introduction-hugo-xmin/</guid>
+      <description>HUGO XMIN Keep it simple, but not simpler XMin is a Hugo theme written by Yihui Xie in about four hours: half an hour was spent on the Hugo templates, and 3.5 hours were spent on styling. The main motivation for writing this theme was to provide a really minimal example to beginners of Hugo templates. This XMin theme contains about 130 lines of code in total, including the code in HTML templates and CSS (also counting empty lines).</description>
+    </item>
+    
+    <item>
+      <title>About</title>
       <link>https://gglee4ai.github.io/blog/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://gglee4ai.github.io/blog/about/</guid>
-      <description>XMin is the first Hugo theme I have designed. The original reason that I wrote it was I needed a minimal example of Hugo themes when I was writing the blogdown book. Basically I wanted a simple theme that supports a navigation menu, a home page, other single pages, lists of pages, blog posts, categories, tags, and RSS. That is all. Nothing fancy. In terms of CSS and JavaScript, I really want to keep them minimal.</description>
+      <description>나이를 먹다보니 슬슬 기억의 한계를 느껴서, 배운 것을 정리하기 위하여 만든 블로그입니다. 레트로 및 미니멀 디자인에 빠른 반응속도를 가지는 정적 웹사이트를 목표로</description>
     </item>
     
   </channel>
