@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko-kr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>github에서 hugo 관련 팁 | gglee Blog</title>
+    <link rel="stylesheet" href="https://gglee4ai.github.io/blog/css/style.css" />
+    <link rel="stylesheet" href="https://gglee4ai.github.io/blog/css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+      <ul class="menu">
+      
+        <li><a href="https://gglee4ai.github.io/blog/">Posts</a></li>
+      
+        <li><a href="https://gglee4ai.github.io/blog/categories/">Categories</a></li>
+      
+        <li><a href="https://gglee4ai.github.io/blog/tags/">Tags</a></li>
+      
+        <li><a href="https://gglee4ai.github.io/blog/about/">About</a></li>
+      
+      </ul>
+      <hr/>
+    </nav>
+
+<div class="article-meta">
+  <span class="category">
+    
+    
+    <a href="https://gglee4ai.github.io/blog/categories/web">Web</a> 
+    
+    
+  </span>
+  <h1>github에서 hugo 관련 팁</h1>
+  <span class="author">gglee</span>
+  <p>2020-04-06</p>
+  <span>
+    
+    
+    Tags: <a href="https://gglee4ai.github.io/blog/tags/blogdown">blogdown</a>, <a href="https://gglee4ai.github.io/blog/tags/hugo">hugo</a>, <a href="https://gglee4ai.github.io/blog/tags/github">github</a>
+    
+    
+  </span>
+</div>
+
+<main>
+<p>hugo와 github 관련해서 팁을 모아보았다.</p>
+<h2 id="hugo-테마를-설치할-때">hugo 테마를 설치할 때</h2>
+<p>git submodule로 설치해야, 테마와 본인 내용을 분리해서 git 사용 가능</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git submodule add https://github.com/yihui/hugo-xmag.git themes/hugo-xmag
+</code></pre></div><h2 id="submodule-삭제시">submodule 삭제시</h2>
+<p>git submodule로 설치된 내용은 아래의 순서대로 제거해야 사라짐</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git submodule deinit -f themes/hugo-xmin
+rm -rf .git/modules/themes/hugo-xmin
+git rm -f themes/hugo-xmin
+</code></pre></div><h2 id="hugo-테마를-포함한-리포지터리를-clone-할때">hugo 테마를 포함한 리포지터리를 clone 할때</h2>
+<p>submodule로 테마가 설치되었을 경우 &ndash;recursive 옵션을 붙여야 한다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git clone --recursive https://github.com/gglee/blog2md
+</code></pre></div>
+</main>
+
+  <footer>
+  <hr/>
+  <ul class="menu">
+    
+    <li><a href="https://gglee4ai.github.io/blog/">Posts</a></li>
+    
+    <li><a href="https://gglee4ai.github.io/blog/categories/">Categories</a></li>
+    
+    <li><a href="https://gglee4ai.github.io/blog/tags/">Tags</a></li>
+    
+    <li><a href="https://gglee4ai.github.io/blog/about/">About</a></li>
+    
+  </ul>  
+  <script> 
+  
+  (function() {
+  var i, text, code, codes = document.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\$[^$]/.test(text) && /[^$]\$$/.test(text)) {
+        text = text.replace(/^\$/, '\\(').replace(/\$$/, '\\)');
+        code.textContent = text;
+      }
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$(.|\s)+\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  
+        continue;
+      }
+    }
+    i++;
+  }
+  })();
+  
+  
+  (function() {
+    function center_el(tagName) {
+      var tags = document.getElementsByTagName(tagName), i, tag;
+      for (i = 0; i < tags.length; i++) {
+        tag = tags[i];
+        var parent = tag.parentElement;
+        
+        if (parent.childNodes.length === 1) {
+          
+          if (parent.nodeName === 'A') {
+            parent = parent.parentElement;
+            if (parent.childNodes.length != 1) continue;
+            parent.firstChild.style.border = 'none';
+          }
+          if (parent.nodeName === 'P') parent.style.textAlign = 'center';
+        }
+      }
+    }
+    var tagNames = ['img', 'embed', 'object'];
+    for (var i = 0; i < tagNames.length; i++) {
+      center_el(tagNames[i]);
+    }
+  })();
+  </script>
+
+<script async src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-162930875-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+  
+  
+  © <a href="https://gglee4ai.github.io">gglee</a> 2020  | <a href="https://github.com/gglee4ai">Github</a>
+  
+  </footer>
+  </body>
+</html>
+

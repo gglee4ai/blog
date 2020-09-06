@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko-kr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Visual studio code setting tips | gglee Blog</title>
+    <link rel="stylesheet" href="https://gglee4ai.github.io/blog/css/style.css" />
+    <link rel="stylesheet" href="https://gglee4ai.github.io/blog/css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+      <ul class="menu">
+      
+        <li><a href="https://gglee4ai.github.io/blog/">Posts</a></li>
+      
+        <li><a href="https://gglee4ai.github.io/blog/categories/">Categories</a></li>
+      
+        <li><a href="https://gglee4ai.github.io/blog/tags/">Tags</a></li>
+      
+        <li><a href="https://gglee4ai.github.io/blog/about/">About</a></li>
+      
+      </ul>
+      <hr/>
+    </nav>
+
+<div class="article-meta">
+  <span class="category">
+    
+    
+    <a href="https://gglee4ai.github.io/blog/categories/web">Web</a> 
+    
+    
+  </span>
+  <h1>Visual studio code setting tips</h1>
+  <span class="author">gglee</span>
+  <p>2020-04-05</p>
+  <span>
+    
+    
+    Tags: <a href="https://gglee4ai.github.io/blog/tags/vscode">vscode</a>, <a href="https://gglee4ai.github.io/blog/tags/tips">tips</a>
+    
+    
+  </span>
+</div>
+
+<main>
+<p>VScode를 사용하면서 필요한 옵션에 대해서 정리해 보았다.</p>
+<h2 id="자동-줄바꿈-켜기">자동 줄바꿈 켜기</h2>
+<p>가끔식 Rmarkdown 파일을 열 경우, 줄바꿈이 안될때가 있다. 이때에는,
+<strong>File &gt; Preferences &gt; Settings</strong> 에서 아래 옵션을 켠다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{ <span style="color:#f92672">&#34;editor.wordWrap&#34;</span>: <span style="color:#e6db74">&#34;on&#34;</span> }
+</code></pre></div><h2 id="tab-설정">tab 설정</h2>
+<p>항상 스페이스, 사이즈는 2, 다른 파일에도 강제 적용</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
+  <span style="color:#f92672">&#34;editor.insertSpaces&#34;</span>: <span style="color:#66d9ef">true</span>,
+  <span style="color:#f92672">&#34;editor.tabSize&#34;</span>: <span style="color:#ae81ff">2</span>,
+  <span style="color:#f92672">&#34;editor.detectIndentation&#34;</span>: <span style="color:#66d9ef">false</span>,
+}
+</code></pre></div>
+</main>
+
+  <footer>
+  <hr/>
+  <ul class="menu">
+    
+    <li><a href="https://gglee4ai.github.io/blog/">Posts</a></li>
+    
+    <li><a href="https://gglee4ai.github.io/blog/categories/">Categories</a></li>
+    
+    <li><a href="https://gglee4ai.github.io/blog/tags/">Tags</a></li>
+    
+    <li><a href="https://gglee4ai.github.io/blog/about/">About</a></li>
+    
+  </ul>  
+  <script> 
+  
+  (function() {
+  var i, text, code, codes = document.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\$[^$]/.test(text) && /[^$]\$$/.test(text)) {
+        text = text.replace(/^\$/, '\\(').replace(/\$$/, '\\)');
+        code.textContent = text;
+      }
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$(.|\s)+\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  
+        continue;
+      }
+    }
+    i++;
+  }
+  })();
+  
+  
+  (function() {
+    function center_el(tagName) {
+      var tags = document.getElementsByTagName(tagName), i, tag;
+      for (i = 0; i < tags.length; i++) {
+        tag = tags[i];
+        var parent = tag.parentElement;
+        
+        if (parent.childNodes.length === 1) {
+          
+          if (parent.nodeName === 'A') {
+            parent = parent.parentElement;
+            if (parent.childNodes.length != 1) continue;
+            parent.firstChild.style.border = 'none';
+          }
+          if (parent.nodeName === 'P') parent.style.textAlign = 'center';
+        }
+      }
+    }
+    var tagNames = ['img', 'embed', 'object'];
+    for (var i = 0; i < tagNames.length; i++) {
+      center_el(tagNames[i]);
+    }
+  })();
+  </script>
+
+<script async src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-162930875-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+  
+  
+  © <a href="https://gglee4ai.github.io">gglee</a> 2020  | <a href="https://github.com/gglee4ai">Github</a>
+  
+  </footer>
+  </body>
+</html>
+

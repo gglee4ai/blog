@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>github on gglee Blog</title>
+    <link>https://gglee4ai.github.io/blog/tags/github/</link>
+    <description>Recent content in github on gglee Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Mon, 06 Apr 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://gglee4ai.github.io/blog/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>github에서 hugo 관련 팁</title>
+      <link>https://gglee4ai.github.io/blog/post/2020/github-hugo-tips/</link>
+      <pubDate>Mon, 06 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://gglee4ai.github.io/blog/post/2020/github-hugo-tips/</guid>
+      <description>hugo와 github 관련해서 팁을 모아보았다. hugo 테마를 설치할 때 git submodule로 설치해야, 테마와 본인 내용을 분리해서 git 사용 가능 git submodule add https://github.com/yihui/hugo-xmag.git themes/hugo-xmag submodule 삭제시 git s</description>
+    </item>
+    
+  </channel>
+</rss>
