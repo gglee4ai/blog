@@ -5,7 +5,9 @@ date: '2020-08-23'
 slug: docker-tips
 categories:
   - web
-tags: [docker, tips]
+tags: 
+  - docker
+  - tips
 draft: no
 ---
 
@@ -146,4 +148,4 @@ docker exec MY-CONTAINER jupyter notebook list
 docker logs MY-CONTAINER  # 보통 log를 보면 토큰이 나와 있음
 ```
 
-Jupyter notebook을 웹으로 접속하기 위해서는 token이 필요한 경우가 있다. 이때, 토큰은 jupyter notebook 의 list 명령 또는 컨테이너 생성당시에 log를 보면 알 수 있다.
+Jupyter notebook을 웹으로 접속하기 위해서는 token이 필요한 경우가 있다. 이때, 토큰은 jupyter notebook 의 list 명령 또는 컨테이너 생성 당시에 log를 보면 알 수 있다.
