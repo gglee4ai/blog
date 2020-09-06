@@ -1,7 +1,13 @@
   <footer>
+  <hr/>
+  <ul class="menu">
+    {{ range .Site.Menus.main }}
+    <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+    {{ end }}
+  </ul>  
   {{ partial "foot_custom.html" . }}
   {{ with .Site.Params.footer }}
-  <hr/>
+  <!-- <hr/> -->
   {{ . | markdownify }}
   {{ end }}
   </footer>
