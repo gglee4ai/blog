@@ -22,7 +22,7 @@ a:hover { text-decoration: underline; }
 .menu a {
   text-decoration: none;
   background: #eee;
-  padding: 5px;
+  padding: 0.5em 0.5em;
   border-radius: 5px;
 }
 .article-meta {
