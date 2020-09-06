@@ -4,7 +4,7 @@ author: Yihui Xie
 date: '2017-06-16'
 slug: about-hugo-xmag
 categories:
-  - web
+  - Web
 tags:
   - markdown
 draft: no

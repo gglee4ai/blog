@@ -4,7 +4,7 @@ author: 'gglee'
 date: '2020-08-23'
 slug: docker-tips
 categories:
-  - web
+  - Web
 tags: 
   - docker
   - tips

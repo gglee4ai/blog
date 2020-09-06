@@ -3,7 +3,7 @@ title: A quick note on two beautiful websites
 author: Yihui Xie
 date: '2017-06-13'
 categories:
-  - web
+  - Web
 slug: a-quick-note
 ---
 

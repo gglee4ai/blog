@@ -3,7 +3,7 @@ title: A plain markdown post
 author: Yihui Xie
 date: '2016-02-14'
 categories:
-  - web
+  - Web
 tags:
   - blogdown
   - hugo

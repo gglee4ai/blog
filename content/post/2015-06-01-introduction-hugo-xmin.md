@@ -4,7 +4,7 @@ author: Yihui Xie
 date: '2015-06-01'
 slug: introduction-hugo-xmin
 categories:
-  - web
+  - Web
 tags:
   - markdown
 draft: no

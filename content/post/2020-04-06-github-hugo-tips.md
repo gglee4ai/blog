@@ -3,7 +3,7 @@ title: github에서 hugo 관련 팁
 author: gglee
 date: '2020-04-06'
 categories:
-  - web
+  - Web
 tags:
   - blogdown
   - hugo
