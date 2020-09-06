@@ -44,4 +44,5 @@ DefaultContentLanguage = "ko"  # gglee for korean language
     [markup.goldmark.renderer]
       unsafe = true
   [markup.highlight]
-    # style = "monokai"
+    style = "monokailight"
+    # style = "monokai" # default
