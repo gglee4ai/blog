@@ -1,18 +1,16 @@
-# baseurl = "/"
 baseurl = "/"
-relativeurls = true  # gglee
 languageCode = "ko-kr"
-title = "gglee Blog"
+title = "gglee blog"
 theme = "hugo-xmin"
 googleAnalytics = "UA-162930875-1"
 disqusShortname = "gglee-blog"
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 footnotereturnlinkcontents = "↩"
-publishDir = "docs"
-# canonifyURLs = false  # gglee
-hasCJKLanguage = true  # gglee
-DefaultContentLanguage = "ko"  # by gglee
-# preserveTaxonomyNames = true  # by gglee
+publishDir = "docs"            # gglee for github page
+relativeurls = true            # gglee for github.io/blog
+hasCJKLanguage = true          # gglee for korean language
+DefaultContentLanguage = "ko"  # gglee for korean language
+# canonifyURLs = false         # gglee, default
 
 [permalinks]
     post = "/post/:year/:slug/"
