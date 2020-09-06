@@ -1,0 +1,20 @@
+---
+title: aaa
+author: aaa
+date: '2020-09-06'
+slug: aaa
+categories:
+  - Statistics
+tags:
+  - rstudio
+draft: yes
+---
+
+```{r}
+library(tidyverse)
+```
+
+```{r}
+plot(cars)
+```
+
