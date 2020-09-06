@@ -48,39 +48,39 @@
 <main>
 <p>ggplot이 참 좋은 패키지인 것은 맞지만, 간단한 그림을 그리는데 타이핑해야 하는 정보가 너무 많이 필요하다. 그래서 알아보니, ggpubr이 과거 plot과 유사한 간단한 사용법에 그림 퀄리티도 뛰어난 것 같아 사용법을 간단하게 정리한다.</p>
 <h2 id="histogram">histogram</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">p1 <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">ggdensity</span>(
-  data <span style="color:#f92672">=</span> df, x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;weight&#34;</span>,
-  add <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;mean&#34;</span>, rug <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>,
-  color <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;sex&#34;</span>, fill <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;sex&#34;</span>,
-  palette <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;#00AFBB&#34;</span>, <span style="color:#e6db74">&#34;#E7B800&#34;</span>)
-)
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#111">p1</span> <span style="color:#f92672">&lt;-</span> <span style="color:#75af00">ggdensity</span><span style="color:#111">(</span>
+  <span style="color:#111">data</span> <span style="color:#f92672">=</span> <span style="color:#111">df</span><span style="color:#111">,</span> <span style="color:#111">x</span> <span style="color:#f92672">=</span> <span style="color:#d88200">&#34;weight&#34;</span><span style="color:#111">,</span>
+  <span style="color:#111">add</span> <span style="color:#f92672">=</span> <span style="color:#d88200">&#34;mean&#34;</span><span style="color:#111">,</span> <span style="color:#111">rug</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">TRUE</span><span style="color:#111">,</span>
+  <span style="color:#111">color</span> <span style="color:#f92672">=</span> <span style="color:#d88200">&#34;sex&#34;</span><span style="color:#111">,</span> <span style="color:#111">fill</span> <span style="color:#f92672">=</span> <span style="color:#d88200">&#34;sex&#34;</span><span style="color:#111">,</span>
+  <span style="color:#111">palette</span> <span style="color:#f92672">=</span> <span style="color:#75af00">c</span><span style="color:#111">(</span><span style="color:#d88200">&#34;#00AFBB&#34;</span><span style="color:#111">,</span> <span style="color:#d88200">&#34;#E7B800&#34;</span><span style="color:#111">)</span>
+<span style="color:#111">)</span>
 
-p2 <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">gghistogram</span>(
-  data <span style="color:#f92672">=</span> df, x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;weight&#34;</span>,
-  add <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;mean&#34;</span>, rug <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>,
-  color <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;sex&#34;</span>, fill <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;sex&#34;</span>,
-  palette <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;#00AFBB&#34;</span>, <span style="color:#e6db74">&#34;#E7B800&#34;</span>)
-)
+<span style="color:#111">p2</span> <span style="color:#f92672">&lt;-</span> <span style="color:#75af00">gghistogram</span><span style="color:#111">(</span>
+  <span style="color:#111">data</span> <span style="color:#f92672">=</span> <span style="color:#111">df</span><span style="color:#111">,</span> <span style="color:#111">x</span> <span style="color:#f92672">=</span> <span style="color:#d88200">&#34;weight&#34;</span><span style="color:#111">,</span>
+  <span style="color:#111">add</span> <span style="color:#f92672">=</span> <span style="color:#d88200">&#34;mean&#34;</span><span style="color:#111">,</span> <span style="color:#111">rug</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">TRUE</span><span style="color:#111">,</span>
+  <span style="color:#111">color</span> <span style="color:#f92672">=</span> <span style="color:#d88200">&#34;sex&#34;</span><span style="color:#111">,</span> <span style="color:#111">fill</span> <span style="color:#f92672">=</span> <span style="color:#d88200">&#34;sex&#34;</span><span style="color:#111">,</span>
+  <span style="color:#111">palette</span> <span style="color:#f92672">=</span> <span style="color:#75af00">c</span><span style="color:#111">(</span><span style="color:#d88200">&#34;#00AFBB&#34;</span><span style="color:#111">,</span> <span style="color:#d88200">&#34;#E7B800&#34;</span><span style="color:#111">)</span>
+<span style="color:#111">)</span>
 
-p3 <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">ggdensity</span>(
-  data <span style="color:#f92672">=</span> df, x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;weight&#34;</span>,
-  add <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;mean&#34;</span>, rug <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>,
-  fill <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;lightgray&#34;</span>
-)
+<span style="color:#111">p3</span> <span style="color:#f92672">&lt;-</span> <span style="color:#75af00">ggdensity</span><span style="color:#111">(</span>
+  <span style="color:#111">data</span> <span style="color:#f92672">=</span> <span style="color:#111">df</span><span style="color:#111">,</span> <span style="color:#111">x</span> <span style="color:#f92672">=</span> <span style="color:#d88200">&#34;weight&#34;</span><span style="color:#111">,</span>
+  <span style="color:#111">add</span> <span style="color:#f92672">=</span> <span style="color:#d88200">&#34;mean&#34;</span><span style="color:#111">,</span> <span style="color:#111">rug</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">TRUE</span><span style="color:#111">,</span>
+  <span style="color:#111">fill</span> <span style="color:#f92672">=</span> <span style="color:#d88200">&#34;lightgray&#34;</span>
+<span style="color:#111">)</span>
 
-p4 <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">gghistogram</span>(
-  data <span style="color:#f92672">=</span> df, x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;weight&#34;</span>,
-  add <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;mean&#34;</span>,
-  color <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;sex&#34;</span>,
-  fill <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;sex&#34;</span>,
-  palette <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;#00AFBB&#34;</span>, <span style="color:#e6db74">&#34;#E7B800&#34;</span>),
-  add_density <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>
-)
+<span style="color:#111">p4</span> <span style="color:#f92672">&lt;-</span> <span style="color:#75af00">gghistogram</span><span style="color:#111">(</span>
+  <span style="color:#111">data</span> <span style="color:#f92672">=</span> <span style="color:#111">df</span><span style="color:#111">,</span> <span style="color:#111">x</span> <span style="color:#f92672">=</span> <span style="color:#d88200">&#34;weight&#34;</span><span style="color:#111">,</span>
+  <span style="color:#111">add</span> <span style="color:#f92672">=</span> <span style="color:#d88200">&#34;mean&#34;</span><span style="color:#111">,</span>
+  <span style="color:#111">color</span> <span style="color:#f92672">=</span> <span style="color:#d88200">&#34;sex&#34;</span><span style="color:#111">,</span>
+  <span style="color:#111">fill</span> <span style="color:#f92672">=</span> <span style="color:#d88200">&#34;sex&#34;</span><span style="color:#111">,</span>
+  <span style="color:#111">palette</span> <span style="color:#f92672">=</span> <span style="color:#75af00">c</span><span style="color:#111">(</span><span style="color:#d88200">&#34;#00AFBB&#34;</span><span style="color:#111">,</span> <span style="color:#d88200">&#34;#E7B800&#34;</span><span style="color:#111">),</span>
+  <span style="color:#111">add_density</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">TRUE</span>
+<span style="color:#111">)</span>
 
-<span style="color:#a6e22e">ggarrange</span>(
-  p1, p2, p3, p4, 
-  labels <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;a)&#34;</span>, <span style="color:#e6db74">&#34;b)&#34;</span>, <span style="color:#e6db74">&#34;c)&#34;</span>, <span style="color:#e6db74">&#34;d)&#34;</span>), 
-  ncol <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>, nrow <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>)
+<span style="color:#75af00">ggarrange</span><span style="color:#111">(</span>
+  <span style="color:#111">p1</span><span style="color:#111">,</span> <span style="color:#111">p2</span><span style="color:#111">,</span> <span style="color:#111">p3</span><span style="color:#111">,</span> <span style="color:#111">p4</span><span style="color:#111">,</span> 
+  <span style="color:#111">labels</span> <span style="color:#f92672">=</span> <span style="color:#75af00">c</span><span style="color:#111">(</span><span style="color:#d88200">&#34;a)&#34;</span><span style="color:#111">,</span> <span style="color:#d88200">&#34;b)&#34;</span><span style="color:#111">,</span> <span style="color:#d88200">&#34;c)&#34;</span><span style="color:#111">,</span> <span style="color:#d88200">&#34;d)&#34;</span><span style="color:#111">),</span> 
+  <span style="color:#111">ncol</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span><span style="color:#111">,</span> <span style="color:#111">nrow</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span><span style="color:#111">)</span>
 </code></pre></div><div class="figure">
 <img src="../../../post/2020-04-04-ggpubr-example_files/figure-html/example-histogram-1.png" alt="히스토그램 예제" width="672" />
 <p class="caption">Figure 1: 히스토그램 예제</p>

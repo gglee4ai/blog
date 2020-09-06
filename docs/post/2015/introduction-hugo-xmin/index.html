@@ -49,8 +49,8 @@
 <h2 id="hugo-xmin">HUGO XMIN</h2>
 <h3 id="_keep-it-simple-but-not-simpler_"><em>Keep it simple, but not simpler</em></h3>
 <p><a href="https://github.com/yihui/hugo-xmin"><strong>XMin</strong></a> is a Hugo theme written by <a href="https://yihui.name">Yihui Xie</a> in about four hours: half an hour was spent on the Hugo templates, and 3.5 hours were spent on styling. The main motivation for writing this theme was to provide a really minimal example to beginners of Hugo templates. This XMin theme contains about 130 lines of code in total, including the code in HTML templates and CSS (also counting empty lines).</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">find . -not -path <span style="color:#e6db74">&#39;*/exampleSite/*&#39;</span> <span style="color:#ae81ff">\(</span> -name <span style="color:#e6db74">&#39;*.html&#39;</span> -o -name <span style="color:#e6db74">&#39;*.css&#39;</span> <span style="color:#ae81ff">\)</span> | xargs wc -l
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">       <span style="color:#ae81ff">5</span> ./layouts/404.html
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">find . -not -path <span style="color:#d88200">&#39;*/exampleSite/*&#39;</span> <span style="color:#8045ff">\(</span> -name <span style="color:#d88200">&#39;*.html&#39;</span> -o -name <span style="color:#d88200">&#39;*.css&#39;</span> <span style="color:#8045ff">\)</span> <span style="color:#111">|</span> xargs wc -l
+</code></pre></div><div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">       <span style="color:#ae81ff">5</span> ./layouts/404.html
       <span style="color:#ae81ff">12</span> ./layouts/_default/single.html
       <span style="color:#ae81ff">20</span> ./layouts/_default/list.html
       <span style="color:#ae81ff">13</span> ./layouts/_default/terms.html
@@ -70,40 +70,40 @@
 <p>The theme name &ldquo;XMin&rdquo; can be interpreted as &ldquo;<strong>X</strong>ie&rsquo;s <strong>Min</strong>imal theme&rdquo; (Xie is my last name) or &ldquo;e<strong>X</strong>tremely <strong>Min</strong>imal theme&rdquo;.</p>
 <h2 id="configtoml">config.toml</h2>
 <p>For this example site, I defined permalinks for two sections, <code>post</code> and <code>note</code>, so that the links to pages under these directories will contain the date info, e.g., <code>https://xmin.yihui.name/post/2016/02/14/a-plain-markdown-post/</code>. This is optional, and it is up to your personal taste of URLs.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[<span style="color:#a6e22e">permalinks</span>]
-    <span style="color:#a6e22e">post</span> = <span style="color:#e6db74">&#34;/post/:year/:month/:day/:slug/&#34;</span>
-    <span style="color:#a6e22e">note</span> = <span style="color:#e6db74">&#34;/note/:year/:month/:day/:slug/&#34;</span>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#111">[</span><span style="color:#75af00">permalinks</span><span style="color:#111">]</span>
+    <span style="color:#75af00">post</span> <span style="color:#111">=</span> <span style="color:#d88200">&#34;/post/:year/:month/:day/:slug/&#34;</span>
+    <span style="color:#75af00">note</span> <span style="color:#111">=</span> <span style="color:#d88200">&#34;/note/:year/:month/:day/:slug/&#34;</span>
 </code></pre></div><p>You can define the menu through <code>menu.main</code>, e.g.,</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[[<span style="color:#a6e22e">menu</span>.<span style="color:#a6e22e">main</span>]]
-    <span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;Home&#34;</span>
-    <span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;/&#34;</span>
-    <span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">1</span>
-[[<span style="color:#a6e22e">menu</span>.<span style="color:#a6e22e">main</span>]]
-    <span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;About&#34;</span>
-    <span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;/about/&#34;</span>
-    <span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">2</span>
-[[<span style="color:#a6e22e">menu</span>.<span style="color:#a6e22e">main</span>]]
-    <span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;Categories&#34;</span>
-    <span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;/categories/&#34;</span>
-    <span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">3</span>
-[[<span style="color:#a6e22e">menu</span>.<span style="color:#a6e22e">main</span>]]
-    <span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;Tags&#34;</span>
-    <span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;/tags/&#34;</span>
-    <span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">4</span>
-[[<span style="color:#a6e22e">menu</span>.<span style="color:#a6e22e">main</span>]]
-    <span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;Subscribe&#34;</span>
-    <span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;/index.xml&#34;</span>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#111">[[</span><span style="color:#75af00">menu</span><span style="color:#111">.</span><span style="color:#75af00">main</span><span style="color:#111">]]</span>
+    <span style="color:#75af00">name</span> <span style="color:#111">=</span> <span style="color:#d88200">&#34;Home&#34;</span>
+    <span style="color:#75af00">url</span> <span style="color:#111">=</span> <span style="color:#d88200">&#34;/&#34;</span>
+    <span style="color:#75af00">weight</span> <span style="color:#111">=</span> <span style="color:#ae81ff">1</span>
+<span style="color:#111">[[</span><span style="color:#75af00">menu</span><span style="color:#111">.</span><span style="color:#75af00">main</span><span style="color:#111">]]</span>
+    <span style="color:#75af00">name</span> <span style="color:#111">=</span> <span style="color:#d88200">&#34;About&#34;</span>
+    <span style="color:#75af00">url</span> <span style="color:#111">=</span> <span style="color:#d88200">&#34;/about/&#34;</span>
+    <span style="color:#75af00">weight</span> <span style="color:#111">=</span> <span style="color:#ae81ff">2</span>
+<span style="color:#111">[[</span><span style="color:#75af00">menu</span><span style="color:#111">.</span><span style="color:#75af00">main</span><span style="color:#111">]]</span>
+    <span style="color:#75af00">name</span> <span style="color:#111">=</span> <span style="color:#d88200">&#34;Categories&#34;</span>
+    <span style="color:#75af00">url</span> <span style="color:#111">=</span> <span style="color:#d88200">&#34;/categories/&#34;</span>
+    <span style="color:#75af00">weight</span> <span style="color:#111">=</span> <span style="color:#ae81ff">3</span>
+<span style="color:#111">[[</span><span style="color:#75af00">menu</span><span style="color:#111">.</span><span style="color:#75af00">main</span><span style="color:#111">]]</span>
+    <span style="color:#75af00">name</span> <span style="color:#111">=</span> <span style="color:#d88200">&#34;Tags&#34;</span>
+    <span style="color:#75af00">url</span> <span style="color:#111">=</span> <span style="color:#d88200">&#34;/tags/&#34;</span>
+    <span style="color:#75af00">weight</span> <span style="color:#111">=</span> <span style="color:#ae81ff">4</span>
+<span style="color:#111">[[</span><span style="color:#75af00">menu</span><span style="color:#111">.</span><span style="color:#75af00">main</span><span style="color:#111">]]</span>
+    <span style="color:#75af00">name</span> <span style="color:#111">=</span> <span style="color:#d88200">&#34;Subscribe&#34;</span>
+    <span style="color:#75af00">url</span> <span style="color:#111">=</span> <span style="color:#d88200">&#34;/index.xml&#34;</span>
 </code></pre></div><p>Alternatively, you can add <code>menu: main</code> to the YAML metadata of any of your pages, so that these pages will appear in the menu.</p>
 <p>The page footer can be defined in <code>.Params.footer</code>, and the text is treated as Markdown, e.g.,</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[<span style="color:#a6e22e">params</span>]
-    <span style="color:#a6e22e">footer</span> = <span style="color:#e6db74">&#34;&amp;copy; [Yihui Xie](https://yihui.name) 2017&#34;</span>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#111">[</span><span style="color:#75af00">params</span><span style="color:#111">]</span>
+    <span style="color:#75af00">footer</span> <span style="color:#111">=</span> <span style="color:#d88200">&#34;&amp;copy; [Yihui Xie](https://yihui.name) 2017&#34;</span>
 </code></pre></div><h2 id="custom-layouts">Custom layouts</h2>
 <p>There are two layout files under <code>layouts/partials/</code> that you may want to override: <code>head_custom.html</code> and <code>foot_custom.html</code>. This is how you inject arbitrary HTML code to the head and foot areas. For example, this site has a file <code>layouts/partials/foot_custom.html</code> to support LaTeX math via MathJax and center images automatically:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;//yihui.name/js/math-code.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
-&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">async</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML&#34;</span>&gt;
-&lt;/<span style="color:#f92672">script</span>&gt;
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#111">&lt;</span><span style="color:#f92672">script</span> <span style="color:#75af00">src</span><span style="color:#f92672">=</span><span style="color:#d88200">&#34;//yihui.name/js/math-code.js&#34;</span><span style="color:#111">&gt;&lt;/</span><span style="color:#f92672">script</span><span style="color:#111">&gt;</span>
+<span style="color:#111">&lt;</span><span style="color:#f92672">script</span> <span style="color:#75af00">async</span> <span style="color:#75af00">src</span><span style="color:#f92672">=</span><span style="color:#d88200">&#34;//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML&#34;</span><span style="color:#111">&gt;</span>
+<span style="color:#111">&lt;/</span><span style="color:#f92672">script</span><span style="color:#111">&gt;</span>
 
-&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">async</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;//yihui.name/js/center-img.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+<span style="color:#111">&lt;</span><span style="color:#f92672">script</span> <span style="color:#75af00">async</span> <span style="color:#75af00">src</span><span style="color:#f92672">=</span><span style="color:#d88200">&#34;//yihui.name/js/center-img.js&#34;</span><span style="color:#111">&gt;&lt;/</span><span style="color:#f92672">script</span><span style="color:#111">&gt;</span>
 </code></pre></div><p>You can certainly enable highlight.js for syntax highlighting by yourself through <code>head_custom.html</code> and <code>foot_custom.html</code> if you want.</p>
 <p>If you do not like the default fonts (e.g., <code>Palatino</code>), you may provide your own <code>static/css/fonts.css</code> under the root directory of your website to override the <code>fonts.css</code> in the theme.</p>
 <h2 id="other-features">Other features</h2>
