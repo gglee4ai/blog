@@ -1,3 +1,4 @@
+# baseurl = "/"
 baseurl = "https://gglee4ai.github.io/blog/"
 languageCode = "ko-kr"
 title = "gglee Blog"
@@ -7,7 +8,8 @@ disqusShortname = "gglee-blog"
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 footnotereturnlinkcontents = "↩"
 publishDir = "docs"
-hasCJKLanguage = true          # add by gglee
+canonifyURLs = true  # gglee
+hasCJKLanguage = true  # by gglee
 DefaultContentLanguage = "ko"  # add by gglee
 # preserveTaxonomyNames = true   # add by gglee
 
