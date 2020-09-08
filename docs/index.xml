@@ -6,10 +6,19 @@
     <description>Recent content in Posts on gglee blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Mon, 24 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 31 Aug 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>test</title>
+      <link>/post/2020/test/</link>
+      <pubDate>Mon, 31 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2020/test/</guid>
+      <description>헤더 1 헤더 테스트 library(tidyverse) for (i in 1:10) { print(i) }</description>
+    </item>
     
     <item>
       <title>Bash 팁 정리</title>
@@ -17,7 +26,7 @@
       <pubDate>Mon, 24 Aug 2020 00:00:00 +0000</pubDate>
       
       <guid>/post/2020/bash-tips/</guid>
-      <description>리눅스 기초인 bash 명령에 대한 내용을 간단히 요약하였다. 보다 자세한 내용은 가장 빨리 만나는 Docker, 4.2장을 하시길. 1 단순 명령 &amp;lt;: 표준입력 다이렉션, cat &amp;lt; ./hello.txt &amp;gt;: 표준</description>
+      <description>리눅스 기초인 bash 명령에 대한 내용을 간단히 요약하였다. 보다 자세한 내용은 가장 빨리 만나는 Docker, 4.2장을 참고하시길. 단순 명령 &amp;lt;: 표준입력 다이렉션, cat &amp;lt; ./hello.txt &amp;gt;: 표</description>
     </item>
     
     <item>
@@ -30,12 +39,21 @@
     </item>
     
     <item>
+      <title>difference-between-two</title>
+      <link>/post/2020/difference-between-two/</link>
+      <pubDate>Sun, 19 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2020/difference-between-two/</guid>
+      <description>소개 두 표본의 통계량 차이를 반복실험을 통해서 알아보자. 일반적으로 잘알려진 사실은 두 표본의 평균의 차는 변하지 않는다. 다만, 편차, 신뢰구간, 또는 표준오차</description>
+    </item>
+    
+    <item>
       <title>두께측정으로 알아보는 통계량</title>
       <link>/post/2020/thickness-measurement-statistic/</link>
       <pubDate>Sun, 12 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>/post/2020/thickness-measurement-statistic/</guid>
-      <description>최근에 철판 두께 관련 측정 자료를 정리할 일이 있었다. 자료를 정리하다 보니, 측정치에 대한 통계중 실수하기 쉬운 내용이 있어 이를 정리해 보았다. 가로 1 m, 세로 1 m</description>
+      <description>소개 최근에 철판 두께 관련 측정 자료를 정리할 일이 있었다. 자료를 정리하다 보니, 측정치에 대한 통계중 실수하기 쉬운 내용이 있어 이를 정리해 보았다. 가로 1 m, 세로</description>
     </item>
     
     <item>

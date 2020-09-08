@@ -39,17 +39,18 @@
   <span>
     
     
-    Tags: <a href="../../../tags/blogdown">blogdown</a>, <a href="../../../tags/hugo">hugo</a>, <a href="../../../tags/markdown">markdown</a>, <a href="../../../tags/mathjax">mathjax</a>, <a href="../../../tags/pandoc">pandoc</a>, <a href="../../../tags/rstudio">rstudio</a>
+    Tags: <a href="../../../tags/hugo">hugo</a>
     
     
   </span>
 </div>
 
 <main>
-<p>hugo-xmin 테마의 저자인 Yihui Xie의 <a href="https://xmin.yihui.org/post/2016/02/14/a-plain-markdown-post/">이 문서</a>를 번역하였습니다.</p>
+  <article class="post" autonumbering>
+  <p>hugo-xmin 테마의 저자인 Yihui Xie의 <a href="https://xmin.yihui.org/post/2016/02/14/a-plain-markdown-post/">이 문서</a>를 번역하였습니다.</p>
 <hr>
 <p>이 글은 주로 <a href="https://github.com/rstudio/blogdown"><strong>blogdown</strong></a> 사용자를 위하여 작성되었습니다. 만일 <strong>blogdown</strong>을 사용하지 않는다면 첫 번째 섹션은 건너 뛸 수 있습니다.</p>
-<h2 id="1-markdown-or-r-markdown">1. Markdown or R Markdown</h2>
+<h2 id="markdown-or-r-markdown">Markdown or R Markdown</h2>
 <ol>
 <li>일반 Markdown 문서에서는 R 코드를 실행할 수 없지만 R Markdown 문서에서는 R 코드 이와 같은 형식으로 (<code>```{r}</code>) 실행할 수 있습니다.</li>
 <li>일반 Markdown 게시물은 Blackfriday를 통해서 변환되지만<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>, R Markdown 문서는 <a href="http://rmarkdown.rstudio.com"><strong>rmarkdown</strong></a>과 <a href="http://pandoc.org">Pandoc</a>에 의해서 변환됩니다.</li>
@@ -66,7 +67,7 @@
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#111">blogdown</span><span style="color:#f92672">::</span><span style="color:#75af00">new_post</span><span style="color:#111">(</span><span style="color:#d88200">&#34;Post Title&#34;</span><span style="color:#111">,</span> <span style="color:#111">rmd</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">FALSE</span><span style="color:#111">)</span>
 </code></pre></div><p>실제적으로는 RStudio를 사용시 addin에서 &ldquo;New Post&rdquo; 명령을 클릭하는 것을 추천합니다.</p>
 <p><img src="https://bookdown.org/yihui/blogdown/images/new-post.png" alt="RStudio addin New Post"></p>
-<h2 id="2-텍스트-예제">2. 텍스트 예제</h2>
+<h2 id="텍스트-예제">텍스트 예제</h2>
 <h2 id="2단계-제목">2단계 제목</h2>
 <h3 id="3단계-제목">3단계 제목</h3>
 <h4 id="4단계-제목">4단계 제목</h4>
@@ -136,15 +137,9 @@
 <td align="right">0.2</td>
 <td align="left">setosa</td>
 </tr>
-<tr>
-<td align="right">5.4</td>
-<td align="right">3.9</td>
-<td align="right">1.7</td>
-<td align="right">0.4</td>
-<td align="left">setosa</td>
-</tr>
 </tbody>
 </table>
+<!-- |          5.4|         3.9|          1.7|         0.4|setosa  | -->
 <p>그림 (적절하게 중앙에 위치):</p>
 <p><img src="https://slides.yihui.name/gif/happy-elmo.gif" alt="Happy Elmo"></p>
 <p>좋아 보이나요?</p>
@@ -160,6 +155,7 @@
 </ol>
 </section>
 
+  </article>
 </main>
 
   <footer>

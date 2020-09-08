@@ -3,10 +3,8 @@ title: Introduction of hugo-xmin theme
 author: Yihui Xie
 date: '2015-06-01'
 slug: introduction-hugo-xmin
-categories:
-  - Web
-tags:
-  - markdown
+categories: [Web]
+tags: [hugo]
 draft: no
 ---
 
@@ -24,7 +22,7 @@ find . -not -path '*/exampleSite/*' \( -name '*.html' -o -name '*.css' \) | xarg
        5 ./layouts/404.html
       12 ./layouts/_default/single.html
       20 ./layouts/_default/list.html
-      13 ./layouts/_default/terms.html
+    13 ./layouts/_default/terms.html
        0 ./layouts/partials/foot_custom.html
        0 ./layouts/partials/head_custom.html
        9 ./layouts/partials/footer.html

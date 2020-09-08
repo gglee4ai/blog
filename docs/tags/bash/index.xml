@@ -17,7 +17,7 @@
       <pubDate>Mon, 24 Aug 2020 00:00:00 +0000</pubDate>
       
       <guid>/post/2020/bash-tips/</guid>
-      <description>리눅스 기초인 bash 명령에 대한 내용을 간단히 요약하였다. 보다 자세한 내용은 가장 빨리 만나는 Docker, 4.2장을 하시길. 1 단순 명령 &amp;lt;: 표준입력 다이렉션, cat &amp;lt; ./hello.txt &amp;gt;: 표준</description>
+      <description>리눅스 기초인 bash 명령에 대한 내용을 간단히 요약하였다. 보다 자세한 내용은 가장 빨리 만나는 Docker, 4.2장을 참고하시길. 단순 명령 &amp;lt;: 표준입력 다이렉션, cat &amp;lt; ./hello.txt &amp;gt;: 표</description>
     </item>
     
   </channel>

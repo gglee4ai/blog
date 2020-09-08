@@ -46,6 +46,8 @@
 </div>
 
 <main>
+  <article class="post" autonumbering>
+  <h2 id="소개">소개</h2>
 <p>최근에 철판 두께 관련 측정 자료를 정리할 일이 있었다. 자료를 정리하다 보니, 측정치에 대한 통계중 실수하기 쉬운 내용이 있어 이를 정리해 보았다.</p>
 <p>가로 1 m, 세로 1 m 두께, 10 mm 인 철판의 두께를 측정하는 경우를 생각해 보자. 두께 측정방법은 초음파탐상측정법을 사용하였고, 캘리브레이션이 다 끝나서 재기만 하면 두께가 mm로 환산되어 나온다고 가정하자. 만일 각 변의 길이에 따라 1 cm 간격으로 측정하면 100 * 100 = 10000 개의 위치에서 데이터를 취득하게 된다.</p>
 <p>이를 R로 모사해 보자. 일단 기본 패키지를 로드한다.</p>
@@ -72,7 +74,7 @@
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#111">mu</span> <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">10</span>        <span style="color:#75715e"># thickness average</span>
 <span style="color:#111">sigma</span> <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">0.03</span>   <span style="color:#75715e"># 초음파측정의 표준편차, 임의의 값</span>
 <span style="color:#75715e"># var &lt;- 0.0009 # sigma^2 </span>
-</code></pre></div><h2 id="1-철판-평균-두께-1회-측정">1. 철판 평균 두께 1회 측정</h2>
+</code></pre></div><h2 id="철판-평균-두께-1회-측정">철판 평균 두께 1회 측정</h2>
 <p>각 grid 위치별로 1번만 잰다고 가정해 보자.</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#111">df</span> <span style="color:#f92672">&lt;-</span> <span style="color:#75af00">rnorm_simulation</span><span style="color:#111">(</span><span style="color:#111">mu</span> <span style="color:#f92672">=</span> <span style="color:#111">mu</span><span style="color:#111">,</span> <span style="color:#111">sigma</span> <span style="color:#f92672">=</span> <span style="color:#111">sigma</span><span style="color:#111">,</span> <span style="color:#111">n_sample</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span><span style="color:#111">,</span> <span style="color:#111">seed</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">22</span><span style="color:#111">)</span>
 <span style="color:#111">df</span>
@@ -106,7 +108,7 @@
   <span style="color:#75af00">geom_histogram</span><span style="color:#111">(</span><span style="color:#111">color</span> <span style="color:#f92672">=</span> <span style="color:#d88200">&#34;black&#34;</span><span style="color:#111">,</span> <span style="color:#111">fill</span> <span style="color:#f92672">=</span> <span style="color:#d88200">&#34;white&#34;</span><span style="color:#111">)</span>
 </code></pre></div><p><img src="../../../post/2020-04-12-thickness-measurement-statistic_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
 <p>최초에 세팅한 값 그대로 잘 나온다. 근데 이건 잘 해석해야 할 것이, 원래 철판 전체의 두께가 10 mm 였는데, 전체 측정한 철판의 평균이 그것에 맞춰서 나온 것이고, 측정 한계 만큼 표준편차와 분산이 발생하였다는 의미. 만일 한 포인트만으로 계산해 보면, 9.90, 10.10 mm 가 나오는 위치도 존재한다. 초음파 표준편차가 0.03 mm인데, 오차가 0.10 mm나 나온다고? 10000번 측정하다 보면 충분히 가능한 이야기이다 (정규분포에서 3sd 이상인 경우).</p>
-<h2 id="2-위치별-측정-횟수-영향">2. 위치별 측정 횟수 영향</h2>
+<h2 id="위치별-측정-횟수-영향">위치별 측정 횟수 영향</h2>
 <p>한 그리드 위치에서 3번, 10번 또는 30번을 측정한다고 가정해 보자. 한 위치에서 반복 측정했으니 그 위치에서 정확도가 높아진다.</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#111">df1</span> <span style="color:#f92672">&lt;-</span> <span style="color:#75af00">rnorm_simulation</span><span style="color:#111">(</span><span style="color:#111">mu</span> <span style="color:#f92672">=</span> <span style="color:#111">mu</span><span style="color:#111">,</span> <span style="color:#111">sigma</span> <span style="color:#f92672">=</span> <span style="color:#111">sigma</span><span style="color:#111">,</span> <span style="color:#111">n_sample</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span><span style="color:#111">,</span> <span style="color:#111">seed</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">22</span><span style="color:#111">)</span>
 <span style="color:#111">df2</span> <span style="color:#f92672">&lt;-</span> <span style="color:#75af00">rnorm_simulation</span><span style="color:#111">(</span><span style="color:#111">mu</span> <span style="color:#f92672">=</span> <span style="color:#111">mu</span><span style="color:#111">,</span> <span style="color:#111">sigma</span> <span style="color:#f92672">=</span> <span style="color:#111">sigma</span><span style="color:#111">,</span> <span style="color:#111">n_sample</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span><span style="color:#111">,</span> <span style="color:#111">seed</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">22</span><span style="color:#111">)</span>
@@ -152,7 +154,7 @@
 <p>참고로 측정위치에 따른 평균과 불확도(표준오차)를 수식으로 표현하면, 아래와 같다.</p>
 <p>$$ \bar{Y} = \frac{1}{N} \sum_{i=1}^{N}{Y_i}$$
 <code>$$s(\bar{Y}) = \frac{1}{\sqrt{N(N-1)}} \sqrt{\sum_{i=1}^{N}{(Y_i - \bar{Y})^2}}$$</code></p>
-<h2 id="3-철판의-두께가-달라지는-경우">3. 철판의 두께가 달라지는 경우</h2>
+<h2 id="철판의-두께가-달라지는-경우">철판의 두께가 달라지는 경우</h2>
 <p>압연과정에서 잘못 만들어져서, 두께가 폭의 한쪽은 10 mm, 다른 쪽은 11 mm이라고 가정해 보자. 각 위치에서 3번씩 측정을 할 경우를 적절히 모사해 보면 다음과 같다. 사실, 이 코드는 이해를 돕기 위하여 조금 길게 쓴 것으로 실제로는 하단에 주석으로 달아놓은 코드와 동일하다.</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#111">n_sample</span> <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">3</span>
 <span style="color:#111">thickness_real</span> <span style="color:#f92672">&lt;-</span> <span style="color:#75af00">rep</span><span style="color:#111">(</span><span style="color:#75af00">seq</span><span style="color:#111">(</span><span style="color:#ae81ff">10</span><span style="color:#111">,</span> <span style="color:#ae81ff">11</span><span style="color:#111">,</span> <span style="color:#111">length.out</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">100</span><span style="color:#111">),</span> <span style="color:#111">each</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">100</span><span style="color:#111">)</span>
@@ -232,13 +234,14 @@
   <span style="color:#75af00">facet_wrap</span><span style="color:#111">(</span><span style="color:#f92672">~</span><span style="color:#111">key</span><span style="color:#111">,</span> <span style="color:#111">scales</span> <span style="color:#f92672">=</span> <span style="color:#d88200">&#34;free&#34;</span><span style="color:#111">)</span>
 </code></pre></div><p><img src="../../../post/2020-04-12-thickness-measurement-statistic_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>
 <p>전체 철판 두께에 대해서는 평균의 분포가 박스형으로 바뀌었으나(10-11 mm사이에 균일 분포), 측정 위치별 분산은 변하지 않았다. 결국, 두께가 다른 경우에도, <strong>초음파 장비의 오차 즉, 분산은 각 위치별 분산의 평균으로 계산할 수 있다</strong>.</p>
-<h2 id="4-요약">4. 요약</h2>
+<h2 id="요약">요약</h2>
 <ul>
 <li>한 위치에서 측정 평균은 항상 참값에 가깝다.</li>
 <li>측정 횟수가 증가할수록 불확도 또는 표준오차, 즉 평균에서 벗어난 정도는 측정횟수에 <code>\(1 / \sqrt{n}\)</code> 만큼 감소한다.</li>
 <li>측정에 따라 발생하는 오차의 분산은 일정하게 유지된다.</li>
 </ul>
 
+  </article>
 </main>
 
   <footer>

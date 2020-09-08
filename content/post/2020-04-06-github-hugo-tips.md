@@ -2,12 +2,8 @@
 title: github에서 hugo 관련 팁
 author: gglee
 date: '2020-04-06'
-categories:
-  - Web
-tags:
-  - blogdown
-  - hugo
-  - github
+categories: [Web]
+tags: [github, hugo, tips]
 slug: github-hugo-tips
 draft: no
 toc: yes

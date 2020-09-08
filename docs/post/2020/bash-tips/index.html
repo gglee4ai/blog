@@ -46,9 +46,10 @@
 </div>
 
 <main>
-<p>리눅스 기초인 bash 명령에 대한 내용을 간단히 요약하였다.
-보다 자세한 내용은 <strong>가장 빨리 만나는 Docker, 4.2장</strong>을 하시길.</p>
-<h2 id="1-단순-명령">1 단순 명령</h2>
+  <article class="post" autonumbering>
+  <p>리눅스 기초인 bash 명령에 대한 내용을 간단히 요약하였다.
+보다 자세한 내용은 <strong>가장 빨리 만나는 Docker, 4.2장</strong>을 참고하시길.</p>
+<h2 id="단순-명령">단순 명령</h2>
 <ul>
 <li><code>&lt;</code>: 표준입력 다이렉션, <code>cat &lt; ./hello.txt</code></li>
 <li><code>&gt;</code>: 표준출력 다이렉션, <code>echo &quot;hello&quot; &gt; ./hello.txt</code></li>
@@ -78,8 +79,8 @@
 <li><code>export</code>: 설정한 값을 환경 변수로 만듬 <code>export HELLO=world</code></li>
 <li><code>#</code>: 주석</li>
 </ul>
-<h2 id="2-고급-명령">2 고급 명령</h2>
-<h3 id="21-if-조건문">2.1 <code>if</code> 조건문</h3>
+<h2 id="고급-명령">고급 명령</h2>
+<h3 id="if-조건문"><code>if</code> 조건문</h3>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#00a8c8">if</span> <span style="color:#f92672">[</span> <span style="color:#111">$a</span> -eq <span style="color:#111">$b</span> <span style="color:#f92672">]</span><span style="color:#111">;</span> <span style="color:#00a8c8">then</span>
   <span style="color:#111">echo</span> <span style="color:#111">$a</span>
 <span style="color:#00a8c8">fi</span>
@@ -87,7 +88,7 @@
 <li>숫자 비교: -eq 같다, -ne 같지않다, -gt 초과, -ge 이상, -lt 미만, -le 이하</li>
 <li>문자열 비교: == 같다, != 같지않다, -z 문자열이 NULL일때, -n 문자열이 NULL아닐때</li>
 </ul>
-<h3 id="22-for-반복문">2.2 <code>for</code> 반복문</h3>
+<h3 id="for-반복문"><code>for</code> 반복문</h3>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#00a8c8">for</span> i in <span style="color:#00a8c8">$(</span>ls<span style="color:#00a8c8">)</span>
 <span style="color:#00a8c8">do</span>
   <span style="color:#111">echo</span> <span style="color:#111">$i</span>
@@ -101,22 +102,23 @@
 <span style="color:#00a8c8">do</span>
   <span style="color:#111">echo</span> <span style="color:#111">$i</span>
 <span style="color:#00a8c8">done</span>
-</code></pre></div><h3 id="23-while-반복문">2.3 <code>while</code> 반복문</h3>
+</code></pre></div><h3 id="while-반복문"><code>while</code> 반복문</h3>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#00a8c8">while</span>:
 <span style="color:#00a8c8">do</span>
   <span style="color:#111">echo</span> <span style="color:#d88200">&#34;Hello World&#34;</span><span style="color:#111">;</span>
   sleep 1<span style="color:#111">;</span>
 <span style="color:#00a8c8">done</span>
-</code></pre></div><h3 id="24-printf-출력문">2.4 <code>printf</code> 출력문</h3>
+</code></pre></div><h3 id="printf-출력문"><code>printf</code> 출력문</h3>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#111">printf</span> 80<span style="color:#8045ff">\\</span>nexampleuser<span style="color:#8045ff">\\</span>ny <span style="color:#111">|</span> example-config
 </code></pre></div><p>example-config의 입력으로 80 \n exampleuser \n y 를 차례로 입력으로 전달 (\n enter)</p>
-<h3 id="25-sed-스트림-에디터">2.5 <code>sed</code> 스트림 에디터</h3>
+<h3 id="sed-스트림-에디터"><code>sed</code> 스트림 에디터</h3>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sed -i <span style="color:#d88200">&#34;s/hello/world/g&#34;</span> hello.txt
 </code></pre></div><ul>
 <li><code>s</code> 치환 <code>/</code> &lt;찾을 문자열&gt; <code>/</code> &lt;바꿀 문자열&gt; <code>/</code> <code>g</code> 전역</li>
 </ul>
 <p>이정도가 docker를 빌드하기 위한 최소한의 명령이라 할 수 있다.</p>
 
+  </article>
 </main>
 
   <footer>

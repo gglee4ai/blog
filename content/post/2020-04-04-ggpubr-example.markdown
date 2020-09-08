@@ -3,8 +3,8 @@ title: ggpubr 예제
 author: gglee
 date: '2020-04-04'
 slug: ggpubr-example
-categories: ["Statistics"]
-tags: ["ggpubr"]
+categories: [Statistics]
+tags: [ggpubr]
 draft: no
 ---
 

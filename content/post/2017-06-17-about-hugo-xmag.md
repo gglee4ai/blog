@@ -3,10 +3,8 @@ title: About hugo xmag
 author: Yihui Xie
 date: '2017-06-16'
 slug: about-hugo-xmag
-categories:
-  - Web
-tags:
-  - markdown
+categories: [Web]
+tags: [hugo]
 draft: no
 ---
 

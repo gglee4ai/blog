@@ -2,11 +2,10 @@
 title: A quick note on two beautiful websites
 author: Yihui Xie
 date: '2017-06-13'
-categories:
-  - Web
-tags:
-  - blogdown
+categories: [Web]
+tags: [blogdown]
 slug: a-quick-note
+draft: yes
 ---
 
 To me, the two most impressive websites based on **blogdown** are:

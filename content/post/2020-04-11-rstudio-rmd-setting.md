@@ -2,18 +2,15 @@
 title: RStudio에서 Rmd 파일 세팅
 author: gglee
 date: '2020-04-11'
-categories:
-  - Statistics
-tags:
-  - rstudio
-  - setting
+categories: [Statistics]
+tags: [rstudio, tips]
 slug: rstudio-rmd-setting
 draft: no
 ---
 
 RStudio로 데이터 분석을 하다 보면 기본적으로 rmarkdown, 또는 rnotebook 문서를 생성하게 된다. 하지만, client에게 전달해 줄때에는 pdf로 주는 것이 가장 확실할 때가 있다. R은 기본적으로 한글 처리가 완벽하지 않아서 처음에 설치된 상태에서는 한글 pdf를 만들수 없다. 따라서 아래의 과정을 이용하여 pdf 출력을 한다.
 
-## 1. TinyTex 패키지 설치
+## TinyTex 패키지 설치
 
 pdf 출력에 필수인 패키지로, 예전에는 texlive 등 엄청 무거운 패키지를 깔았어야 했지만, R에서는 단지 TinyTex 만으로도 충분히 글을 쓸만큼 깔아준다. RStudio의 개발자인 Yihui Xie에 중국인이라서 다행인 점.
 
@@ -22,7 +19,7 @@ install.packages('tinytex')
 tinytex::install_tinytex()
 ```
 
-## 2. Rmd 파일의 설정 추가
+## Rmd 파일의 설정 추가
 
 출력하고자 하는 문서에 두 줄이 반드시 추가되어야 한다. xelatex은 CJK 문자 처리를 잘 해는 latex_engine으로, RStudio의 기본인 pdflatex에서 반드시 변경해 주어야 한다.
 
@@ -40,7 +37,7 @@ mainfont: NanumGothic      # mandatory
 ---
 ```
 
-## 3. 나의 Rnotebook 파일의 기본 정보
+## 나의 Rnotebook 파일의 기본 정보
 
 일단 분석을 위해서는 속도가 중요하기 때문에 html_notebook으로 작성을 하고, 어느정도 내용이 잘 정리가 되면, 외부인에게 제공할 목적으로 pdf_document를 작성한다.
 
@@ -75,7 +72,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-## 4. 부가정보
+## 부가정보
 
 - 그림안에서 한글을 쓰기 위해서는 또다른 방법이 필요하다. 하지만 기본적으로 그림 및 table에서는 영어로 쓰는 편이 좋다.
 - 폰트 추가 설치를 위해서는 웹에서 otf 파일을 구해서 font book에 던져 넣으면 된다. 아마 그럴 일은 많지 않지만...

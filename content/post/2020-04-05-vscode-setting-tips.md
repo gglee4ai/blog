@@ -2,8 +2,7 @@
 title: Visual studio code setting tips
 author: gglee
 date: '2020-04-05'
-categories:
-  - Web
+categories: [Web]
 tags: [vscode, tips]
 slug: vscode-setting-tips
 draft: no

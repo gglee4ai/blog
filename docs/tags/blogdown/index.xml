@@ -6,19 +6,10 @@
     <description>Recent content in blogdown on gglee blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Mon, 06 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 13 Jun 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/blogdown/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>github에서 hugo 관련 팁</title>
-      <link>/post/2020/github-hugo-tips/</link>
-      <pubDate>Mon, 06 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/post/2020/github-hugo-tips/</guid>
-      <description>hugo와 github 관련해서 팁을 모아보았다. hugo 테마를 설치할 때 git submodule로 설치해야, 테마와 본인 내용을 분리해서 git 사용 가능 git submodule add https://github.com/yihui/hugo-xmag.git themes/hugo-xmag submodule 삭제시 git s</description>
-    </item>
     
     <item>
       <title>A quick note on two beautiful websites</title>
@@ -28,15 +19,6 @@
       <guid>/post/2017/a-quick-note/</guid>
       <description>To me, the two most impressive websites based on blogdown are:
  Rob J Hyndman&amp;rsquo;s personal website. Live Free or Dichotomize by Lucy and Nick et al.  I&amp;rsquo;m sure there will be more.</description>
-    </item>
-    
-    <item>
-      <title>A plain markdown post</title>
-      <link>/post/2016/a-plain-markdown-post/</link>
-      <pubDate>Sun, 14 Feb 2016 00:00:00 +0000</pubDate>
-      
-      <guid>/post/2016/a-plain-markdown-post/</guid>
-      <description>hugo-xmin 테마의 저자인 Yihui Xie의 이 문서를 번역하였습니다. 이 글은 주로 blogdown 사용자를 위하여 작성되었습니다. 만일 blogdown을 사용하지 않는다면 첫 번째 섹션은</description>
     </item>
     
   </channel>

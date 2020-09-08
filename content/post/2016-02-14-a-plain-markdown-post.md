@@ -2,15 +2,8 @@
 title: A plain markdown post
 author: Yihui Xie
 date: '2016-02-14'
-categories:
-  - Web
-tags:
-  - blogdown
-  - hugo
-  - markdown
-  - mathjax
-  - pandoc
-  - rstudio
+categories: [Web]
+tags: [hugo]
 ---
 
 hugo-xmin 테마의 저자인 Yihui Xie의 [이 문서](https://xmin.yihui.org/post/2016/02/14/a-plain-markdown-post/)를 번역하였습니다.
@@ -19,7 +12,7 @@ hugo-xmin 테마의 저자인 Yihui Xie의 [이 문서](https://xmin.yihui.org/p
 
 이 글은 주로 [**blogdown**](https://github.com/rstudio/blogdown) 사용자를 위하여 작성되었습니다. 만일 **blogdown**을 사용하지 않는다면 첫 번째 섹션은 건너 뛸 수 있습니다.
 
-## 1. Markdown or R Markdown
+## Markdown or R Markdown
 
 1. 일반 Markdown 문서에서는 R 코드를 실행할 수 없지만 R Markdown 문서에서는 R 코드 이와 같은 형식으로 (```` ```{r} ````) 실행할 수 있습니다.
 2. 일반 Markdown 게시물은 Blackfriday를 통해서 변환되지만[^1], R Markdown 문서는 [**rmarkdown**](http://rmarkdown.rstudio.com)과 [Pandoc](http://pandoc.org)에 의해서 변환됩니다.
@@ -43,7 +36,7 @@ blogdown::new_post("Post Title", rmd = FALSE)
 
 ![RStudio addin New Post](https://bookdown.org/yihui/blogdown/images/new-post.png)
 
-## 2. 텍스트 예제
+## 텍스트 예제
 
 ## 2단계 제목
 
@@ -85,7 +78,7 @@ blogdown::new_post("Post Title", rmd = FALSE)
 |          4.7|         3.2|          1.3|         0.2|setosa  |
 |          4.6|         3.1|          1.5|         0.2|setosa  |
 |          5.0|         3.6|          1.4|         0.2|setosa  |
-|          5.4|         3.9|          1.7|         0.4|setosa  |
+<!-- |          5.4|         3.9|          1.7|         0.4|setosa  | -->
 
 그림 (적절하게 중앙에 위치):
 
