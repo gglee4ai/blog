@@ -41,7 +41,7 @@
     <item>
       <title>simulation</title>
       <link>/tags/simulation/</link>
-      <pubDate>Sun, 19 Apr 2020 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 12 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>/tags/simulation/</guid>
       <description></description>
@@ -84,20 +84,11 @@
     </item>
     
     <item>
-      <title>ggpubr</title>
-      <link>/tags/ggpubr/</link>
+      <title>ggplot</title>
+      <link>/tags/ggplot/</link>
       <pubDate>Sat, 04 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/ggpubr/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>blogdown</title>
-      <link>/tags/blogdown/</link>
-      <pubDate>Tue, 13 Jun 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/blogdown/</guid>
+      <guid>/tags/ggplot/</guid>
       <description></description>
     </item>
     
