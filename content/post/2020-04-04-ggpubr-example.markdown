@@ -16,7 +16,7 @@ ggplot이 참 좋은 패키지인 것은 맞지만, 간단한 그림을 그리�
 
 
 
-## histogram
+## Histogram
 
 
 ```r
