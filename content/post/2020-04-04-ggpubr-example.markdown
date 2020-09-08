@@ -4,7 +4,7 @@ author: gglee
 date: '2020-04-04'
 slug: ggpubr-example
 categories: [Statistics]
-tags: [ggpubr]
+tags: [ggplot]
 draft: no
 ---
 
