@@ -33,7 +33,7 @@ df <- tibble(
 df
 ```
 
-## histogram
+## Histogram
 
 ```{r example-histogram, include=TRUE, echo=TRUE, warning=FALSE, fig.cap="히스토그램 예제"}
 p1 <- ggdensity(
