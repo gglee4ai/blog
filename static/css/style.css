@@ -64,9 +64,10 @@ blockquote {
 
 /* table */
 table {
+  font-size: 0.9em;
   margin: auto;
-  border-top: 1px solid #ccc; 
-  border-bottom: 1px solid #ccc; 
+  border-top: 1px solid #aaa; 
+  border-bottom: 1px solid #aaa; 
 }
 th { border-bottom: 1px solid #ccc; }
 th, td { padding: 5px; }
