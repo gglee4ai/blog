@@ -20,7 +20,9 @@
 </div>
 
 <main>
-{{ .Content }}
+  <article class="post" {{- if .Param "autonumbering" }} autonumbering {{- end }}>
+  {{ .Content }}
+  </article>
 </main>
 
 {{ partial "footer.html" . }}

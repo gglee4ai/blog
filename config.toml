@@ -7,10 +7,11 @@ disqusShortname = "gglee-blog"
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 footnotereturnlinkcontents = "↩"
 publishDir = "docs"            # gglee for github page
-relativeurls = true            # gglee for github.io/blog
+relativeURLs = true            # gglee for github.io/blog
+# canonifyURLs = false         # gglee, default for blogdown
 hasCJKLanguage = true          # gglee for korean language
 DefaultContentLanguage = "ko"  # gglee for korean language
-# canonifyURLs = false         # gglee, default
+
 
 [permalinks]
     post = "/post/:year/:slug/"
@@ -38,6 +39,7 @@ DefaultContentLanguage = "ko"  # gglee for korean language
 [params]
     description = "이 사이트는 Hugo와 blogdown으로 제작되었습니다."
     footer = "&copy; [gglee](https://gglee4ai.github.io) 2020  | [Github](https://github.com/gglee4ai)"
+    autonumbering = true
 
 [markup]
   [markup.goldmark]
