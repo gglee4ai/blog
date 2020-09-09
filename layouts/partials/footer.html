@@ -6,10 +6,7 @@
     {{ end }}
   </ul>  
   {{ partial "foot_custom.html" . }}
-  {{ with .Site.Params.footer }}
-  <!-- <hr/> -->
-  {{ . | markdownify }}
-  {{ end }}
+  {{ with .Site.Params.footer }}{{ . | markdownify }}{{ end }}
   </footer>
   </body>
 </html>
