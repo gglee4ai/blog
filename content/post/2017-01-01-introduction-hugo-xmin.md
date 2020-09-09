@@ -1,7 +1,7 @@
 ---
 title: Introduction of hugo-xmin theme
 author: Yihui Xie
-date: '2015-06-01'
+date: '2017-01-01'
 slug: introduction-hugo-xmin
 categories: [Web]
 tags: [hugo]

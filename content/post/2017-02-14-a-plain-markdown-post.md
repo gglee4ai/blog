@@ -1,7 +1,7 @@
 ---
 title: A plain markdown post
 author: Yihui Xie
-date: '2016-02-14'
+date: '2017-02-14'
 categories: [Web]
 tags: [hugo]
 ---
