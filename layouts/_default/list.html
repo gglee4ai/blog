@@ -2,14 +2,11 @@
 
 {{ if .IsHome }}
 <div class="article-meta">
-<h1>{{ .Title | markdownify }}</h1>
+  <h1>{{ .Title | markdownify }}</h1>
 </div>
-{{ else }}
+  {{ partial "archive.html" .}}
+{{ else }}  <!-- general case -->
 <h1>{{ .Title | markdownify }}</h1>
-{{ end }}
-
-{{ .Content }}
-
 <ul class="posts">
   {{ $pages := .Pages }}
   {{ if .IsHome }}{{ $pages = .Site.RegularPages }}{{ end }}
@@ -20,5 +17,6 @@
   </li>
   {{ end }}
 </ul>
+{{ end }}
 
 {{ partial "footer.html" . }}
