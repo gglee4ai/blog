@@ -66,15 +66,6 @@
     </item>
     
     <item>
-      <title>ggpubr 예제</title>
-      <link>/post/2020/ggpubr-example/</link>
-      <pubDate>Sat, 04 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/post/2020/ggpubr-example/</guid>
-      <description>ggplot이 참 좋은 패키지인 것은 맞지만, 간단한 그림을 그리는데 타이핑해야 하는 정보가 너무 많이 필요하다. 그래서 알아보니, ggpubr이 과거 plot</description>
-    </item>
-    
-    <item>
       <title>About hugo xmag</title>
       <link>/post/2017/about-hugo-xmag/</link>
       <pubDate>Fri, 16 Jun 2017 00:00:00 +0000</pubDate>
