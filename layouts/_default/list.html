@@ -6,7 +6,10 @@
 </div>
   {{ partial "archive.html" .}}
 {{ else }}  <!-- general case -->
-<h1>{{ .Title | markdownify }}</h1>
+<div class="article-meta">
+  <h1>Posts</h1>
+</div>
+<h2>{{ .Title | markdownify }}</h2>
 <ul class="posts">
   {{ $pages := .Pages }}
   {{ if .IsHome }}{{ $pages = .Site.RegularPages }}{{ end }}
