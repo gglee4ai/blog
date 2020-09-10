@@ -3,6 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/post/</loc>
+    <lastmod>2020-08-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2020-08-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/2020/test/</loc>
+    <lastmod>2020-08-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/tags/bash/</loc>
     <lastmod>2020-08-24T00:00:00+00:00</lastmod>
   </url>
@@ -14,16 +29,6 @@
   
   <url>
     <loc>/categories/</loc>
-    <lastmod>2020-08-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/</loc>
-    <lastmod>2020-08-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/</loc>
     <lastmod>2020-08-24T00:00:00+00:00</lastmod>
   </url>
   
@@ -53,13 +58,18 @@
   </url>
   
   <url>
+    <loc>/post/2020/difference-between-two/</loc>
+    <lastmod>2020-04-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/tags/simulation/</loc>
-    <lastmod>2020-04-12T00:00:00+00:00</lastmod>
+    <lastmod>2020-04-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/categories/statistics/</loc>
-    <lastmod>2020-04-12T00:00:00+00:00</lastmod>
+    <lastmod>2020-04-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -115,6 +125,16 @@
   <url>
     <loc>/post/2017/about-hugo-xmag/</loc>
     <lastmod>2017-06-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/2017/a-quick-note/</loc>
+    <lastmod>2017-06-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/blogdown/</loc>
+    <lastmod>2017-06-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
