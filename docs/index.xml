@@ -6,10 +6,19 @@
     <description>Recent content in Posts on gglee blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Mon, 24 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 31 Aug 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>test</title>
+      <link>/post/2020/test/</link>
+      <pubDate>Mon, 31 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2020/test/</guid>
+      <description>헤더1 헤더 테스트 헤더2 library(tidyverse) for (i in 1:10) { print(i) }</description>
+    </item>
     
     <item>
       <title>Bash 팁 정리</title>
@@ -27,6 +36,15 @@
       
       <guid>/post/2020/docker-tips/</guid>
       <description>쓸수록 매력있는 것이 도커 인 것 같다. 처음에 세팅과 개념이 어려워서 그렇지 적절한 명령어로 조합을 하고 나면, 리눅스 서버의 능력을 최고로 사용할 수 있는 것 같다. 하</description>
+    </item>
+    
+    <item>
+      <title>difference-between-two</title>
+      <link>/post/2020/difference-between-two/</link>
+      <pubDate>Sun, 19 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2020/difference-between-two/</guid>
+      <description>소개 두 표본의 통계량 차이를 반복실험을 통해서 알아보자. 일반적으로 잘알려진 사실은 두 표본의 평균의 차는 변하지 않는다. 다만, 편차, 신뢰구간, 또는 표준오차</description>
     </item>
     
     <item>
@@ -84,6 +102,16 @@
 Features This theme includes a few cool features:
   Responsive article summary blocks on homepage
   Thumbnails in summary blocks</description>
+    </item>
+    
+    <item>
+      <title>A quick note on two beautiful websites</title>
+      <link>/post/2017/a-quick-note/</link>
+      <pubDate>Tue, 13 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2017/a-quick-note/</guid>
+      <description>To me, the two most impressive websites based on blogdown are:
+ Rob J Hyndman&amp;rsquo;s personal website. Live Free or Dichotomize by Lucy and Nick et al.  I&amp;rsquo;m sure there will be more.</description>
     </item>
     
     <item>

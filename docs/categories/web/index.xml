@@ -60,6 +60,16 @@ Features This theme includes a few cool features:
     </item>
     
     <item>
+      <title>A quick note on two beautiful websites</title>
+      <link>/post/2017/a-quick-note/</link>
+      <pubDate>Tue, 13 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2017/a-quick-note/</guid>
+      <description>To me, the two most impressive websites based on blogdown are:
+ Rob J Hyndman&amp;rsquo;s personal website. Live Free or Dichotomize by Lucy and Nick et al.  I&amp;rsquo;m sure there will be more.</description>
+    </item>
+    
+    <item>
       <title>A plain markdown post</title>
       <link>/post/2017/a-plain-markdown-post/</link>
       <pubDate>Tue, 14 Feb 2017 00:00:00 +0000</pubDate>
