@@ -4,5 +4,4 @@
 * repository는 public으로 설정해야 함
 * Rmarkdown 수정을 위해서느 blogdown:::serve_site()를 실행한 후 작성
 * github page 이용을 위햇 config.toml에서 publishDir = "docs"로 변경
-* 확실한 publish를 위해서는 docs 내 파일으 제거한 후 hugo로 compile 하고, push할 것
-
+* 확실한 publish를 위해서는 docs 폴더를 제거한 후 hugo로 compile하고, push할 것
