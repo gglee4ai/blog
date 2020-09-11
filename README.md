@@ -1,6 +1,7 @@
 # blog
 
-* 휴고 및 netlify를 이용한 개인 블로그
-* R에서 blogdown:::serve_site()를 실행해야 hugo가 작동됨
-* config.toml에서 publishDir = "docs"로 바꾸면 github page에서 작동
-* repository 를 public을 바꿔야 볼 수 있음
+* hugo 및 blogdown를 이용한 개인 블로그
+* repository는 public으로 설정해야 함
+* Rmarkdown 수정을 위해서느 blogdown:::serve_site()를 실행한 후 작성
+* github page 이용을 위햇 config.toml에서 publishDir = "docs"로 변경
+* 확실한 publish를 위해서는 docs 폴더를 제거한 후 hugo로 compile하고, push할 것
