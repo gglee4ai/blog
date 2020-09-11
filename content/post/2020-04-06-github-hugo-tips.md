@@ -39,7 +39,7 @@ git clone --recursive https://github.com/gglee/blog2md
 
 ## git cache 삭제 실행
 
-hugo와 blogdowndmf 동시에 사용하다 보면, 가끔씩 docs 폴더가 꼬이는 수가 있다. 이럴 때는 cache 실행하면 해결되는 수가 많다.
+hugo와 blogdown을 동시에 사용하다 보면, 가끔씩 docs 폴더가 꼬이는 수가 있다. 이럴 때는 cache를 제거하면 해결되기도 한다.
 
 ```bash
 git rm -r --cached .
