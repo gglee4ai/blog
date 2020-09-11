@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>vscode on gglee blog</title>
+    <link>/tags/vscode/</link>
+    <description>Recent content in vscode on gglee blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Sun, 05 Apr 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/vscode/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Visual studio code setting tips</title>
+      <link>/post/2020/vscode-setting-tips/</link>
+      <pubDate>Sun, 05 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2020/vscode-setting-tips/</guid>
+      <description>VScode를 사용하면서 필요한 옵션에 대해서 정리해 보았다. 자동 줄바꿈 켜기 가끔식 Rmarkdown 파일을 열 경우, 줄바꿈이 안될때가 있다. 이때에는, File &amp;gt; Preferences &amp;gt; Settings 에서 아</description>
+    </item>
+    
+  </channel>
+</rss>

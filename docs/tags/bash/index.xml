@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>bash on gglee blog</title>
+    <link>/tags/bash/</link>
+    <description>Recent content in bash on gglee blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Mon, 24 Aug 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/bash/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Bash 팁 정리</title>
+      <link>/post/2020/bash-tips/</link>
+      <pubDate>Mon, 24 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2020/bash-tips/</guid>
+      <description>리눅스 기초인 bash 명령에 대한 내용을 간단히 요약하였다. 보다 자세한 내용은 가장 빨리 만나는 Docker, 4.2장을 참고하시길. 단순 명령 &amp;lt;: 표준입력 다이렉션, cat &amp;lt; ./hello.txt &amp;gt;: 표</description>
+    </item>
+    
+  </channel>
+</rss>

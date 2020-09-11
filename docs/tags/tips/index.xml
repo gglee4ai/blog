@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tips on gglee blog</title>
+    <link>/tags/tips/</link>
+    <description>Recent content in tips on gglee blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Mon, 24 Aug 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/tips/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Bash 팁 정리</title>
+      <link>/post/2020/bash-tips/</link>
+      <pubDate>Mon, 24 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2020/bash-tips/</guid>
+      <description>리눅스 기초인 bash 명령에 대한 내용을 간단히 요약하였다. 보다 자세한 내용은 가장 빨리 만나는 Docker, 4.2장을 참고하시길. 단순 명령 &amp;lt;: 표준입력 다이렉션, cat &amp;lt; ./hello.txt &amp;gt;: 표</description>
+    </item>
+    
+    <item>
+      <title>Docker 팁 정리</title>
+      <link>/post/2020/docker-tips/</link>
+      <pubDate>Sun, 23 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2020/docker-tips/</guid>
+      <description>쓸수록 매력있는 것이 도커 인 것 같다. 처음에 세팅과 개념이 어려워서 그렇지 적절한 명령어로 조합을 하고 나면, 리눅스 서버의 능력을 최고로 사용할 수 있는 것 같다. 하</description>
+    </item>
+    
+    <item>
+      <title>RStudio에서 Rmd 파일 세팅</title>
+      <link>/post/2020/rstudio-rmd-setting/</link>
+      <pubDate>Sat, 11 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2020/rstudio-rmd-setting/</guid>
+      <description>RStudio로 데이터 분석을 하다 보면 기본적으로 rmarkdown, 또는 rnotebook 문서를 생성하게 된다. 하지만, client에게 전달해 줄때에는 pdf로 주는 것이 가장 확실할 때</description>
+    </item>
+    
+    <item>
+      <title>github에서 hugo 관련 팁</title>
+      <link>/post/2020/github-hugo-tips/</link>
+      <pubDate>Mon, 06 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2020/github-hugo-tips/</guid>
+      <description>hugo와 github 관련해서 팁을 모아보았다. hugo 테마를 설치할 때 git submodule로 설치해야, 테마와 본인 내용을 분리해서 git 사용 가능 git submodule add https://github.com/yihui/hugo-xmag.git themes/hugo-xmag submodule 삭제시 git s</description>
+    </item>
+    
+    <item>
+      <title>Visual studio code setting tips</title>
+      <link>/post/2020/vscode-setting-tips/</link>
+      <pubDate>Sun, 05 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2020/vscode-setting-tips/</guid>
+      <description>VScode를 사용하면서 필요한 옵션에 대해서 정리해 보았다. 자동 줄바꿈 켜기 가끔식 Rmarkdown 파일을 열 경우, 줄바꿈이 안될때가 있다. 이때에는, File &amp;gt; Preferences &amp;gt; Settings 에서 아</description>
+    </item>
+    
+  </channel>
+</rss>
