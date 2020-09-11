@@ -5,7 +5,7 @@ date: '2017-01-01'
 slug: introduction-hugo-xmin
 categories: [Web]
 tags: [hugo]
-draft: no
+draft: yes
 ---
 
 ## HUGO XMIN
