@@ -99,13 +99,13 @@
     <span style="color:#75af00">alt</span> <span style="color:#111">=</span> <span style="color:#d88200">&#34;alternative text on image&#34;</span>
 </code></pre></div><p>By default, each summary block on the homepage contains the first 200 letters extracted from all paragraphs of an article. I find Hugo&rsquo;s built in <code>.Summary</code> often unsatisfactory (e.g. it may contain headings and code blocks, which really should not go to the summary), so I wrote my own version. It works much better and the size of most summary blocks will be the same, unless certain articles are really short. The length 200 can be customized via <code>params.summary_length</code>.</p>
 <p>If you are not satisfied with the automatic summary, you can specify the <code>description</code> option in the (YAML) metadata of your Markdown document, e.g.,</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#00a8c8">title</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;My Cool Post&#34;</span>
-<span style="color:#00a8c8">description</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;Please use this as the summary.&#34;</span>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#f92672">title</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;My Cool Post&#34;</span>
+<span style="color:#f92672">description</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;Please use this as the summary.&#34;</span>
 </code></pre></div><p>Each summary block may contain a thumbnail, which is the first image in an article if exists. You can override it by providing the <code>thumbnail</code> option in the meta data of your Markdown document, e.g.,</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">---
-<span style="color:#00a8c8">title</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;My Cool Post&#34;</span>
-<span style="color:#00a8c8">thumbnail</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;/url/of/the/image&#34;</span>
----
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#111">---</span>
+<span style="color:#f92672">title</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;My Cool Post&#34;</span>
+<span style="color:#f92672">thumbnail</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;/url/of/the/image&#34;</span>
+<span style="color:#111">---</span>
 </code></pre></div><p>For each page, this theme adds an edit link to the top-right if a parameter <code>github_edit</code> is provided, so that your reader may easily help you edit a page and submit a pull request on Github.</p>
 <p>The page footer can be defined in <code>.Params.footer</code>, and the text is treated as Markdown. Below are some sample configurations:</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#111">[</span><span style="color:#75af00">params</span><span style="color:#111">]</span>

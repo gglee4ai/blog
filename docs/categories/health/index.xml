@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Health on gglee blog</title>
+    <link>/categories/health/</link>
+    <description>Recent content in Health on gglee blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Fri, 09 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="/categories/health/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>나의 식이요법-밥따로 물따로</title>
+      <link>/post/2020/my-diet-secret/</link>
+      <pubDate>Fri, 09 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2020/my-diet-secret/</guid>
+      <description>최근에 위염 증세가 도져서 식사가 영 불편해 졌다. 나이가 들어가면서 조금씩 건강이 안 좋아짐을 느끼면서, 과거에 했던 수행했던 수련법들이 다시 생각이 났다. 아버지</description>
+    </item>
+    
+  </channel>
+</rss>
