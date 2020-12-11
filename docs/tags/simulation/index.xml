@@ -6,11 +6,7 @@
     <description>Recent content in simulation on gglee blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sun, 12 Apr 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/simulation/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 12 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/simulation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>두께측정으로 알아보는 통계량</title>
       <link>/post/2020/thickness-measurement-statistic/</link>

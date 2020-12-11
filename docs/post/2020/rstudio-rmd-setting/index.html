@@ -56,34 +56,34 @@
 </code></pre></div><h2 id="rmd-파일의-설정-추가">Rmd 파일의 설정 추가</h2>
 <p>출력하고자 하는 문서에 두 줄이 반드시 추가되어야 한다. xelatex은 CJK 문자 처리를 잘 해는 latex_engine으로, RStudio의 기본인 pdflatex에서 반드시 변경해 주어야 한다.</p>
 <p>기본 pdf 문서 폰트는 한글을 내장하고 있지 않기 때문에 main 폰트를 반드시 바꿔줘야 한다. 맥에서는 font book에서 한글 폰트를 찾아 Postscript Name을 info 창에서 확인하고 이름을 넣으면 된다. 이것 저것 확인해 본 결과 나는 나눔고딕이 가장 무난했다.</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">---
-<span style="color:#00a8c8">title</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;PDF 출력&#34;</span>
-<span style="color:#00a8c8">date</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;2020-04-11&#34;</span>
-<span style="color:#00a8c8">author</span><span style="color:#111">:</span> gglee
-<span style="color:#00a8c8">output</span><span style="color:#111">:</span>
-  <span style="color:#00a8c8">pdf_document</span><span style="color:#111">:</span>
-    <span style="color:#00a8c8">latex_engine</span><span style="color:#111">:</span> xelatex  <span style="color:#75715e"># mandatory</span>
-<span style="color:#00a8c8">mainfont</span><span style="color:#111">:</span> NanumGothic      <span style="color:#75715e"># mandatory</span>
----
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#111">---</span>
+<span style="color:#f92672">title</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;PDF 출력&#34;</span>
+<span style="color:#f92672">date</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;2020-04-11&#34;</span>
+<span style="color:#f92672">author</span><span style="color:#111">:</span> <span style="color:#ae81ff">gglee</span>
+<span style="color:#f92672">output</span><span style="color:#111">:</span>
+  <span style="color:#f92672">pdf_document</span><span style="color:#111">:</span>
+    <span style="color:#f92672">latex_engine</span><span style="color:#111">:</span> <span style="color:#ae81ff">xelatex  # mandatory</span>
+<span style="color:#f92672">mainfont</span><span style="color:#111">:</span> <span style="color:#ae81ff">NanumGothic      # mandatory</span>
+<span style="color:#111">---</span>
 </code></pre></div><h2 id="나의-rnotebook-파일의-기본-정보">나의 Rnotebook 파일의 기본 정보</h2>
 <p>일단 분석을 위해서는 속도가 중요하기 때문에 html_notebook으로 작성을 하고, 어느정도 내용이 잘 정리가 되면, 외부인에게 제공할 목적으로 pdf_document를 작성한다.</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">---
-<span style="color:#00a8c8">title</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;PDF 출력&#34;</span>
-<span style="color:#00a8c8">date</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;2020-04-11&#34;</span>
-<span style="color:#00a8c8">author</span><span style="color:#111">:</span> gglee
-<span style="color:#00a8c8">output</span><span style="color:#111">:</span>
-  <span style="color:#00a8c8">html_notebook</span><span style="color:#111">:</span>
-    <span style="color:#00a8c8">code_folding</span><span style="color:#111">:</span> none
-    <span style="color:#00a8c8">number_section</span><span style="color:#111">:</span> yes
-    <span style="color:#00a8c8">toc</span><span style="color:#111">:</span> yes
-    <span style="color:#00a8c8">toc_depth</span><span style="color:#111">:</span> <span style="color:#ae81ff">3</span>
-  <span style="color:#00a8c8">bookdown::pdf_document2</span><span style="color:#111">:</span>
-    <span style="color:#00a8c8">fig_caption</span><span style="color:#111">:</span> yes
-    <span style="color:#00a8c8">latex_engine</span><span style="color:#111">:</span> xelatex
-    <span style="color:#00a8c8">number_sections</span><span style="color:#111">:</span> yes
-    <span style="color:#00a8c8">toc</span><span style="color:#111">:</span> yes
-<span style="color:#00a8c8">mainfont</span><span style="color:#111">:</span> NanumGothic
----
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#111">---</span>
+<span style="color:#f92672">title</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;PDF 출력&#34;</span>
+<span style="color:#f92672">date</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;2020-04-11&#34;</span>
+<span style="color:#f92672">author</span><span style="color:#111">:</span> <span style="color:#ae81ff">gglee</span>
+<span style="color:#f92672">output</span><span style="color:#111">:</span>
+  <span style="color:#f92672">html_notebook</span><span style="color:#111">:</span>
+    <span style="color:#f92672">code_folding</span><span style="color:#111">:</span> <span style="color:#ae81ff">none</span>
+    <span style="color:#f92672">number_section</span><span style="color:#111">:</span> <span style="color:#00a8c8">yes</span>
+    <span style="color:#f92672">toc</span><span style="color:#111">:</span> <span style="color:#00a8c8">yes</span>
+    <span style="color:#f92672">toc_depth</span><span style="color:#111">:</span> <span style="color:#ae81ff">3</span>
+  <span style="color:#f92672">bookdown::pdf_document2</span><span style="color:#111">:</span>
+    <span style="color:#f92672">fig_caption</span><span style="color:#111">:</span> <span style="color:#00a8c8">yes</span>
+    <span style="color:#f92672">latex_engine</span><span style="color:#111">:</span> <span style="color:#ae81ff">xelatex</span>
+    <span style="color:#f92672">number_sections</span><span style="color:#111">:</span> <span style="color:#00a8c8">yes</span>
+    <span style="color:#f92672">toc</span><span style="color:#111">:</span> <span style="color:#00a8c8">yes</span>
+<span style="color:#f92672">mainfont</span><span style="color:#111">:</span> <span style="color:#ae81ff">NanumGothic</span>
+<span style="color:#111">---</span>
 </code></pre></div><p>헤더에 이어서 출력을 위한 chunk option을 아래와 같이 설정</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#111">knitr</span><span style="color:#f92672">::</span><span style="color:#111">opts_chunk</span><span style="color:#f92672">$</span><span style="color:#75af00">set</span><span style="color:#111">(</span>
   <span style="color:#111">echo</span> <span style="color:#f92672">=</span> <span style="color:#00a8c8">FALSE</span><span style="color:#111">,</span>
