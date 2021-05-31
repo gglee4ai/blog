@@ -1,5 +1,5 @@
 ---
-title: 나의 식이요법-밥따로 물따로
+title: 나의 식이요법 - 밥따로 물따로
 author: gglee
 date: '2020-10-09'
 slug: my-diet-secret
